@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviourPunCallbacks
 {
     Animator _animator;
     Camera _camera;
@@ -15,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     public bool run;
 
     public float smoothness = 10f;
+
+    public PhotonView PV;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +30,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!PV.IsMine)
+        {
+            return;
+        }
         if (Input.GetKey(KeyCode.LeftAlt))
         {
             togglerCameraRotation = true;
