@@ -50,6 +50,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         txtRoomName.text = PlayerPrefs.GetString("ROOM_NAME", "ROOM_" + Random.Range(1, 999));
         password.text = PlayerPrefs.GetString("PASSWORD", "");
 
+
     }
 
     #region SELF_CALLBACK_FUNCTIONS
@@ -305,4 +306,6 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         MyListRenewal();
     }
     #endregion
+
+    
 }
