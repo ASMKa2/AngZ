@@ -24,7 +24,16 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            ChatPanel.SetActive(true);
+            if (!isChatPanelActive)
+            {
+                isChatPanelActive = true;
+                Debug.Log(isChatPanelActive);
+                ChatPanel.SetActive(true);
+            }
+            else
+            {
+                Send();
+            }
         }
     }
 
@@ -41,19 +50,24 @@ public class GameManager : MonoBehaviourPunCallbacks
     public TMP_InputField ChatInput;
     public PhotonView PV;
 
-    public void CloseChat()
-    {
-        if(ChatInput.text == "")
-        {
-            ChatPanel.SetActive(false);
-        }
-    }
+    private bool isChatPanelActive = false;
 
     public void Send()
     {
-        PV.RPC("ChatRPC", RpcTarget.All, PhotonNetwork.NickName + " : " + ChatInput.text);
-        ChatInput.text = "";
+        Debug.Log(ChatInput.text.ToString());
+        if (ChatInput.text.ToString() == "")
+        {
+            Debug.Log("????");
+            isChatPanelActive = false;
+            ChatPanel.SetActive(false); 
+            Debug.Log(isChatPanelActive);
 
+        }
+        else
+        {
+            PV.RPC("ChatRPC", RpcTarget.All, PhotonNetwork.NickName + " : " + ChatInput.text);
+            ChatInput.text = "";
+        }
     }
 
     [PunRPC] // RPC는 플레이어가 속해있는 방 모든 인원에게 전달한다
