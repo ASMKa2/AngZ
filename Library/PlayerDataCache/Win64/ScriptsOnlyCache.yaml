@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraMovement
+    - Change_Sex
     - EqChange
     - GameManager
     - InventoryUI
@@ -39,8 +40,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -421,13 +424,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7140}
     - Class: 114
-      Script: {instanceID: 7680}
+      Script: {instanceID: 7678}
     - Class: 114
-      Script: {instanceID: 7974}
+      Script: {instanceID: 7972}
     - Class: 114
-      Script: {instanceID: 8226}
+      Script: {instanceID: 8224}
     - Class: 114
-      Script: {instanceID: 8364}
+      Script: {instanceID: 8362}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 136
@@ -578,15 +581,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7416}
     - Class: 114
-      Script: {instanceID: 7680}
+      Script: {instanceID: 7678}
     - Class: 114
-      Script: {instanceID: 7970}
+      Script: {instanceID: 7968}
     - Class: 114
-      Script: {instanceID: 8364}
+      Script: {instanceID: 8362}
     - Class: 114
-      Script: {instanceID: 8496}
+      Script: {instanceID: 8494}
     - Class: 114
-      Script: {instanceID: 8836}
+      Script: {instanceID: 8834}
+    - Class: 114
+      Script: {instanceID: 43498}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1374,7 +1379,7 @@ ScriptsOnlyBuild:
     className: DictionaryAsset
   - hash:
       serializedVersion: 2
-      Hash: 2569ed80210fb05c4058d60303260ef5
+      Hash: ca10b80422fd27b1ca58e841a34b20ff
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InventoryUI
@@ -2202,7 +2207,7 @@ ScriptsOnlyBuild:
     className: UnityOnParticleCollisionMessageListener
   - hash:
       serializedVersion: 2
-      Hash: a39b613bc3a3d952d547179fe393ed53
+      Hash: a4164433967941954478610253724fa0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EqChange
@@ -2374,6 +2379,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 43ef623a4b9b2fa0d07a4f023fff7aed
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Change_Sex
   platform: 19
   scenePathNames:
   - Assets/Scenes/Scene_Login.unity
@@ -2381,4 +2392,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Metaverse/Scene_Street.unity
   - Assets/Scenes/Metaverse/Scene_Nature.unity
   - Assets/Scenes/Metaverse/Scene_LectureRoom.unity
-  playerPath: C:/Users/kayso/Desktop/snowtest.exe
+  playerPath: "C:/Users/tg859/\uBC14\uD0D5 \uD654\uBA74/unity/reAngZ/AngZ/snowtest.exe"

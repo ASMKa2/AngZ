@@ -12,9 +12,9 @@ public class GameManager : MonoBehaviourPunCallbacks
     void Start()
     {
         //Insert functions for loading scene for avatar creation
-        //ÇöÀç´Â photoninit¿¡¼­ loadsceneÇÏ°í ¿©±â¼­ avatar »ý¼º.
-        //photoninitÀÇ select tema ¿¡¼­ create room ÇÏ±â Àü¿¡ avatar ÀúÀÛ ±â´É ¾ÀÀ¸·Î ÀÌµ¿Çß´Ù°¡ °¡±â
-        //ÅÂ°ïÀÌ ±¸ÇöÇØ³õÀº ¾Æ¹ÙÅ¸ ¾ÀÀÌµ¿ ÄÚµå ºÐ¼®ºÎÅÍ
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ photoninitï¿½ï¿½ï¿½ï¿½ loadsceneï¿½Ï°ï¿½ ï¿½ï¿½ï¿½â¼­ avatar ï¿½ï¿½ï¿½ï¿½.
+        //photoninitï¿½ï¿½ select tema ï¿½ï¿½ï¿½ï¿½ create room ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ avatar ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ï¿½ß´Ù°ï¿½ ï¿½ï¿½ï¿½ï¿½
+        //ï¿½Â°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½ ï¿½Æ¹ï¿½Å¸ ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Úµï¿½ ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½ï¿½
         CreateMale();
         PhotonNetwork.IsMessageQueueRunning = true;
     }
@@ -39,11 +39,11 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     void CreateMale()
     {
-        PhotonNetwork.Instantiate("Male", new Vector3(688.66f, 30f, 692.83f), Quaternion.identity);
+        PhotonNetwork.Instantiate("human", new Vector3(688.66f, 30f, 692.83f), Quaternion.identity);
     }
 
-    #region Ã¤ÆÃ
-    //update¿¡¼­ enter Å° ÀÔ·Â ½Ã Ã¤ÆÃ Ã¢ ÄÑÁü
+    #region Ã¤ï¿½ï¿½
+    //updateï¿½ï¿½ï¿½ï¿½ enter Å° ï¿½Ô·ï¿½ ï¿½ï¿½ Ã¤ï¿½ï¿½ Ã¢ ï¿½ï¿½ï¿½ï¿½
     public GameObject ChatPanel;
 
     public TMP_Text[] ChatText;
@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
     }
 
-    [PunRPC] // RPC´Â ÇÃ·¹ÀÌ¾î°¡ ¼ÓÇØÀÖ´Â ¹æ ¸ðµç ÀÎ¿ø¿¡°Ô Àü´ÞÇÑ´Ù
+    [PunRPC] // RPCï¿½ï¿½ ï¿½Ã·ï¿½ï¿½Ì¾î°¡ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½
     void ChatRPC(string msg)
     {
         bool isInput = false;
@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviourPunCallbacks
                 ChatText[i].text = msg;
                 break;
             }
-        if (!isInput) // ²ËÂ÷¸é ÇÑÄ­¾¿ À§·Î ¿Ã¸²
+        if (!isInput) // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã¸ï¿½
         {
             for (int i = 1; i < ChatText.Length; i++) ChatText[i - 1].text = ChatText[i].text;
             ChatText[ChatText.Length - 1].text = msg;

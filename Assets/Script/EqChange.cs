@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EqChange : MonoBehaviour
 {
+    public Transform Hair;
     public Transform Head;
     public Transform Top;
-    public Transform Hair;
     public Transform Bottom;
     void Start()
     {
