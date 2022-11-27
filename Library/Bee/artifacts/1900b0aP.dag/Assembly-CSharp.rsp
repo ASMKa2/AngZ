@@ -324,7 +324,6 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll"
 "Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/CTI Runtime Components/Scripts/CTI_CustomWind.cs"
 "Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/CTI Runtime Components/Scripts/CTI_Utils.cs"
-"Assets/outline.cs"
 "Assets/Photon/PhotonChat/Demos/Common/EventSystemSpawner.cs"
 "Assets/Photon/PhotonChat/Demos/Common/OnStartDelete.cs"
 "Assets/Photon/PhotonChat/Demos/Common/TextButtonTransition.cs"

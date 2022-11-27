@@ -18,7 +18,8 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         CREATE_ROOM = 2,
         ROOM_LIST = 3,
         ROOM_OPTIONS = 4,
-        PASSWORD = 5
+        PASSWORD = 5,
+        PASSWORD_WRONG = 6
     }
     public ActivePanel activePanel = ActivePanel.LOGIN;
 
@@ -130,10 +131,17 @@ public class PhotonInit : MonoBehaviourPunCallbacks
 
         byte result = 0;
 
-        for(int i = 0; i < players.Length; i++)
+        if (players.Length > 2)
         {
-            result *= 10;
-            result += (byte)(players[i] - (byte)48);
+            result = 99;
+        }
+        else
+        {
+            for (int i = 0; i < players.Length; i++)
+            {
+                result *= 10;
+                result += (byte)(players[i] - (byte)48);
+            }
         }
 
         roomOptions.MaxPlayers = result;
@@ -221,6 +229,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
     public void PasswordPanelOff()
     {
         panels[(int)ActivePanel.PASSWORD].SetActive(false);
+        panels[(int)ActivePanel.PASSWORD_WRONG].SetActive(false);
     }
 
     public void OnPasswordClick()
@@ -230,14 +239,17 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         Debug.Log(passwordTried.text);
         if (passwordTried.text.Equals(System.Convert.ToString(ht["password"])))
         {
+            panels[(int)ActivePanel.PASSWORD_WRONG].SetActive(false);
             PhotonNetwork.JoinRoom(myList[curRoomNum].Name);
         }
         else
         {
             //message for password wrong
+            panels[(int)ActivePanel.PASSWORD_WRONG].SetActive(true);
         }
 
-        PasswordPanelOff();
+        
+
     }
 
     public GameObject LobbyPanel;
