@@ -19,9 +19,11 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
     public float smoothness = 10f;
 
     public PhotonView PV;
+    private Transform transform;
     // Start is called before the first frame update
     void Start()
     {
+        transform = GetComponent<Transform>();
         _animator = this.GetComponent<Animator>();
         _camera = Camera.main;
         _controller = this.GetComponent<CharacterController>();

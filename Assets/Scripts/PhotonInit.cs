@@ -18,7 +18,8 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         CREATE_ROOM = 2,
         ROOM_LIST = 3,
         ROOM_OPTIONS = 4,
-        PASSWORD = 5
+        PASSWORD = 5,
+        PASSWORD_WRONG = 6
     }
     public ActivePanel activePanel = ActivePanel.LOGIN;
 
@@ -28,6 +29,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
 
     public TMP_InputField txtUserId;
     public TMP_InputField txtRoomName;
+    public TMP_InputField txtMaxPlayers;
 
     public Toggle toggleLocked;
     public TMP_InputField password;
@@ -49,6 +51,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         txtUserId.text = PlayerPrefs.GetString("USER_ID", "USER_" + Random.Range(1, 999));
         txtRoomName.text = PlayerPrefs.GetString("ROOM_NAME", "ROOM_" + Random.Range(1, 999));
         password.text = PlayerPrefs.GetString("PASSWORD", "");
+
 
     }
 
@@ -102,6 +105,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
 
     public void OnCreateRoomClick()
     {
+        Debug.Log(txtMaxPlayers.text);
         PlayerPrefs.SetString("ROOM_NAME", txtRoomName.text);
 
         ChangePanel(ActivePanel.CREATE_ROOM);
@@ -123,8 +127,25 @@ public class PhotonInit : MonoBehaviourPunCallbacks
     public void OnCreateRoom()
     {
         RoomOptions roomOptions = new RoomOptions();
-        roomOptions.MaxPlayers = 20;
-        Debug.Log(password.text);
+        byte[] players = System.Text.Encoding.UTF8.GetBytes(txtMaxPlayers.text);
+
+        byte result = 0;
+
+        if (players.Length > 2)
+        {
+            result = 99;
+        }
+        else
+        {
+            for (int i = 0; i < players.Length; i++)
+            {
+                result *= 10;
+                result += (byte)(players[i] - (byte)48);
+            }
+        }
+
+        roomOptions.MaxPlayers = result;
+
         roomOptions.CustomRoomProperties = new Hashtable() {
             {"roomName", txtRoomName.text },
             {"isLocked", toggleLocked.isOn },
@@ -137,6 +158,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         };
         PhotonNetwork.CreateRoom(txtRoomName.text
                                 , roomOptions);
+        Debug.Log(roomOptions.MaxPlayers);
     }
     public void SelectTema_1()
     {
@@ -207,6 +229,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
     public void PasswordPanelOff()
     {
         panels[(int)ActivePanel.PASSWORD].SetActive(false);
+        panels[(int)ActivePanel.PASSWORD_WRONG].SetActive(false);
     }
 
     public void OnPasswordClick()
@@ -216,14 +239,17 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         Debug.Log(passwordTried.text);
         if (passwordTried.text.Equals(System.Convert.ToString(ht["password"])))
         {
+            panels[(int)ActivePanel.PASSWORD_WRONG].SetActive(false);
             PhotonNetwork.JoinRoom(myList[curRoomNum].Name);
         }
         else
         {
             //message for password wrong
+            panels[(int)ActivePanel.PASSWORD_WRONG].SetActive(true);
         }
 
-        PasswordPanelOff();
+        
+
     }
 
     public GameObject LobbyPanel;
@@ -305,4 +331,6 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         MyListRenewal();
     }
     #endregion
+ 
+    
 }
