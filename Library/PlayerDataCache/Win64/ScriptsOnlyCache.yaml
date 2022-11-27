@@ -39,10 +39,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -199,12 +197,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: EqChange
     methodName: HairEq
-  - assembly: Assembly-CSharp
-    fullTypeName: GameManager
-    methodName: Send
-  - assembly: Assembly-CSharp
-    fullTypeName: GameManager
-    methodName: CloseChat
   sceneClasses:
     Assets/Scenes/Metaverse/Scene_LectureRoom.unity:
     - Class: 1
@@ -1796,7 +1788,7 @@ ScriptsOnlyBuild:
     className: PunCockpit
   - hash:
       serializedVersion: 2
-      Hash: 2b4e503c3b42f653397c7e8a5e956079
+      Hash: 3d0afaa8951b4e8be58a91c653fd0624
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PhotonInit

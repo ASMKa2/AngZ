@@ -28,6 +28,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
 
     public TMP_InputField txtUserId;
     public TMP_InputField txtRoomName;
+    public TMP_InputField txtMaxPlayers;
 
     public Toggle toggleLocked;
     public TMP_InputField password;
@@ -103,6 +104,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
 
     public void OnCreateRoomClick()
     {
+        Debug.Log(txtMaxPlayers.text);
         PlayerPrefs.SetString("ROOM_NAME", txtRoomName.text);
 
         ChangePanel(ActivePanel.CREATE_ROOM);
@@ -124,8 +126,18 @@ public class PhotonInit : MonoBehaviourPunCallbacks
     public void OnCreateRoom()
     {
         RoomOptions roomOptions = new RoomOptions();
-        roomOptions.MaxPlayers = 20;
-        Debug.Log(password.text);
+        byte[] players = System.Text.Encoding.UTF8.GetBytes(txtMaxPlayers.text);
+
+        byte result = 0;
+
+        for(int i = 0; i < players.Length; i++)
+        {
+            result *= 10;
+            result += (byte)(players[i] - (byte)48);
+        }
+
+        roomOptions.MaxPlayers = result;
+
         roomOptions.CustomRoomProperties = new Hashtable() {
             {"roomName", txtRoomName.text },
             {"isLocked", toggleLocked.isOn },
@@ -138,6 +150,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         };
         PhotonNetwork.CreateRoom(txtRoomName.text
                                 , roomOptions);
+        Debug.Log(roomOptions.MaxPlayers);
     }
     public void SelectTema_1()
     {
@@ -306,6 +319,6 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         MyListRenewal();
     }
     #endregion
-
+ 
     
 }
