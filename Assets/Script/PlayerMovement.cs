@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
         {
             return;
         }
+
         if (Input.GetKey(KeyCode.LeftAlt))
         {
             togglerCameraRotation = true;

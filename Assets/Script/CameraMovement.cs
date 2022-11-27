@@ -50,7 +50,7 @@ public class CameraMovement : MonoBehaviour
         Quaternion rot = Quaternion.Euler(rotX, rotY, 0);
         transform.rotation = rot;
 
-        
+        if (Input.GetKey(KeyCode.M)) ScrollWheel = 0;
         ScrollWheel += Input.GetAxis("Mouse ScrollWheel");
 
     }
