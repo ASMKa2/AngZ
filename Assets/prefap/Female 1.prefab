@@ -2861,7 +2861,6 @@ GameObject:
   - component: {fileID: 3319132859481370308}
   - component: {fileID: 8714396098024404158}
   - component: {fileID: 8714396098024404159}
-  - component: {fileID: 3318784077584726029}
   m_Layer: 0
   m_Name: Female 1
   m_TagString: Untagged
@@ -2924,20 +2923,6 @@ MonoBehaviour:
   TopGroup: {fileID: 2991890698955948426}
   LegGroup: {fileID: 2991890699541421647}
   HairGroup: {fileID: 2991890698231217286}
---- !u!114 &3318784077584726029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2685338814318572670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ee626ddb9ad390459487ec3bf747829, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  rotateSpeed: 120
 --- !u!1 &2685338814363316329
 GameObject:
   m_ObjectHideFlags: 0

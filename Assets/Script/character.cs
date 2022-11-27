@@ -23,7 +23,7 @@ public class character : MonoBehaviour
     int currentLegNumber = 0;
     int currentHairNumber = 0;
 
-
+    int currentChild = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -144,6 +144,8 @@ public class character : MonoBehaviour
         ShowDresses(legs,currentLegNumber);
     }
 
+
+
 //#################저장 및 씬 바꾸기################################
     //데이터 저장 및 불러오기 PlayerPrefs 사용한다
     //데이터 저장하기 (버튼과 연결해야 하니 public으로 선언)
@@ -173,6 +175,14 @@ public class character : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.C)){
+            if(currentChild==0){
+                transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+                currentChild=1;
+            }else{
+                transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+                currentChild=0;
+            }
+        }
     }
 }

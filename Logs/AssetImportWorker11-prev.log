@@ -1,0 +1,292 @@
+Using pre-set license
+Built from '2021.3/release' branch; Version is '2021.3.12f1 (8af3c3e441b1) revision 9106371'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'ko' Physical Memory: 16178 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker11
+-projectPath
+C:/Users/tg859/바탕 화면/unity/AngZ
+-logFile
+Logs/AssetImportWorker11.log
+-srvPort
+59554
+Successfully changed project path to: C:/Users/tg859/바탕 화면/unity/AngZ
+C:/Users/tg859/바탕 화면/unity/AngZ
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 402.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.12f1 (8af3c3e441b1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/tg859/바탕 화면/unity/AngZ/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 620 (ID=0x3ea0)
+    Vendor:   Intel
+    VRAM:     8089 MB
+    Driver:   31.0.101.2111
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56740
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.030927 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 188.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.362 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1363ms)
+		BeginReloadAssembly (214ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (911ms)
+			LoadAssemblies (205ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (200ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (565ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (109ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (189ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (158ms)
+				ProcessInitializeOnLoadMethodAttributes (104ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.029704 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\tg859\바탕 화면\unity\AngZ\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\tg859\바탕 화면\unity\AngZ\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.478 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2479ms)
+		BeginReloadAssembly (487ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (166ms)
+		EndReloadAssembly (1736ms)
+			LoadAssemblies (265ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (539ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (805ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (34ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (226ms)
+				ProcessInitializeOnLoadAttributes (458ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
+				AfterProcessingInitializeOnLoad (33ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (40ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 1.10 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3646 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (114.4 KB). Loaded Objects now: 4123.
+Memory consumption went from 161.3 MB to 161.2 MB.
+Total: 4.503100 ms (FindLiveObjects: 0.360000 ms CreateObjectMapping: 0.310700 ms MarkObjects: 3.662000 ms  DeleteObjects: 0.169400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 146611.330011 seconds.
+  path: Assets/Taegon/image/female/Bottom
+  artifactKey: Guid(b162696436dab2f4dafdb568b2e97038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom using Guid(b162696436dab2f4dafdb568b2e97038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db109c6bb79ac6b0ec6c1cc43f8269e9') in 0.021064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.023952 seconds.
+  path: Assets/Taegon/image/female/Bottom/1.png
+  artifactKey: Guid(84799b9fd420bb749ae29f6ed0424da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/1.png using Guid(84799b9fd420bb749ae29f6ed0424da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f16b917ea87cf1f5e88d1d26c9db63e') in 0.193482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Taegon/image/female/Bottom/7.png
+  artifactKey: Guid(9b8dadc3987f46440a07f7e13f1b62e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/7.png using Guid(9b8dadc3987f46440a07f7e13f1b62e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fe42881d933c48ff697a6f99157e187') in 0.029039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Taegon/image/female/Bottom/29.png
+  artifactKey: Guid(df3e823ec1acc954fbad73f44acb62cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/29.png using Guid(df3e823ec1acc954fbad73f44acb62cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '599cb9d1510d1bf719f9fefefe346934') in 0.032668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Taegon/image/female/Bottom/13.png
+  artifactKey: Guid(f3209bc5c54962e4bbbb84cfcd68e297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/13.png using Guid(f3209bc5c54962e4bbbb84cfcd68e297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d37ca1e86562c5057d03ebefecfcd92') in 0.034490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Taegon/image/female/Bottom/16.png
+  artifactKey: Guid(407cae121777cae4fb7ebf4e40582262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/16.png using Guid(407cae121777cae4fb7ebf4e40582262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30387d59f86bd9b741c3d3f1905c16dd') in 0.036995 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Taegon/image/female/Bottom/34.png
+  artifactKey: Guid(e0a646c32c7fb934ab9e124df0a83e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/34.png using Guid(e0a646c32c7fb934ab9e124df0a83e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09c3e8d46b8ac48e6434e90029a016bc') in 0.036910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Taegon/image/female/Bottom/22.png
+  artifactKey: Guid(b38321237e10bba46a8d898417839a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/22.png using Guid(b38321237e10bba46a8d898417839a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb69d0b156b0c0b27c5ab725261d1080') in 0.026174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Taegon/image/female/Bottom/33.png
+  artifactKey: Guid(4d1d9dcf3dd59e3478c012fcbe71d865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/33.png using Guid(4d1d9dcf3dd59e3478c012fcbe71d865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1b296e9e1b9666a2875b14edf0bf1a4') in 0.033577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Taegon/image/female/Bottom/36.png
+  artifactKey: Guid(d27e36704ea1d0a449bf7769069dde98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/36.png using Guid(d27e36704ea1d0a449bf7769069dde98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f22a1f44b2d7363d9c78787462dd305f') in 0.036365 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Taegon/image/female/Bottom/32.png
+  artifactKey: Guid(7b1a06e352afbbc4e8775a22946605c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/32.png using Guid(7b1a06e352afbbc4e8775a22946605c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d91aa903a3ddcd4893df220264f722f') in 0.030872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Taegon/image/female/Bottom/23.png
+  artifactKey: Guid(ef3435696f3541c4e9739ee2e603e937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/23.png using Guid(ef3435696f3541c4e9739ee2e603e937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8c28cdfa516dbe6dd12ee8aea9d812b') in 0.029558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Taegon/image/female/Bottom/6.png
+  artifactKey: Guid(4d9a86f4f7f6571489282320f3d25f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/6.png using Guid(4d9a86f4f7f6571489282320f3d25f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '793bda01293bd7e295e2267b6b060bb6') in 0.030683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Taegon/image/female/Bottom/18.png
+  artifactKey: Guid(394fb4bdfec62d646a5937b97ea380ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/18.png using Guid(394fb4bdfec62d646a5937b97ea380ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2237e2d7487d5c8faac1251e4a84ee6d') in 0.030423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Taegon/image/female/Bottom/10.png
+  artifactKey: Guid(42d31592d097e0f44a0980f7f46a6a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/10.png using Guid(42d31592d097e0f44a0980f7f46a6a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6bf3501ac1b6b4c4ff241159a450661') in 0.031960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Taegon/image/female/Bottom/20.png
+  artifactKey: Guid(910489e305993044a8482a12a3dbfc1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/20.png using Guid(910489e305993044a8482a12a3dbfc1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6873d424996208c0e4e56b2bc99a278a') in 0.037309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Taegon/image/female/Bottom/19.png
+  artifactKey: Guid(5525e4dc48f65af4c86f46f57bab0f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/19.png using Guid(5525e4dc48f65af4c86f46f57bab0f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b36da61bc2826b46f898f87f92205f5') in 0.028050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Taegon/image/female/Bottom/39.png
+  artifactKey: Guid(861266ccbc216534c9b90ece6b1d3347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/39.png using Guid(861266ccbc216534c9b90ece6b1d3347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '081c3c2a2203b877ee5d45e87afd8105') in 0.030436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Taegon/image/female/Bottom/5.png
+  artifactKey: Guid(40017e6855e25d8468dcd5ab1694ceaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/5.png using Guid(40017e6855e25d8468dcd5ab1694ceaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a8c55d9c2d3d394dc1377a3a88ae5c') in 0.036396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Taegon/image/female/Bottom/27.png
+  artifactKey: Guid(96b008980fa72e44195f5a0e2798f2e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/27.png using Guid(96b008980fa72e44195f5a0e2798f2e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56579902ee7fd28595881cdcf9d60914') in 0.036794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Taegon/image/female/Bottom/37.png
+  artifactKey: Guid(ef2e595532103994fb86f46ab51b54bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Taegon/image/female/Bottom/37.png using Guid(ef2e595532103994fb86f46ab51b54bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3583887aaa25c3771b3f15b28021f440') in 0.035606 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
