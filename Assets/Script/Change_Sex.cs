@@ -18,7 +18,7 @@ public class Change_Sex : MonoBehaviour
     void Update()
     {
         Vector3 pos;
-        if(Input.GetKeyDown(KeyCode.S)){
+        if(Input.GetKeyDown(KeyCode.Q)){
             Sex = !Sex;
             if(Sex){
                 pos = transform.GetChild(1).transform.position;
@@ -29,8 +29,8 @@ public class Change_Sex : MonoBehaviour
             }else{
                 pos = transform.GetChild(0).transform.position;
                 transform.GetChild(1).gameObject.transform.position = pos;
-                transform.GetChild(1).gameObject.SetActive(true);
                 transform.GetChild(0).gameObject.SetActive(false);
+                transform.GetChild(1).gameObject.SetActive(true);
             }
         }
         

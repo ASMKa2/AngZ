@@ -1,0 +1,385 @@
+Using pre-set license
+Built from '2021.3/release' branch; Version is '2021.3.12f1 (8af3c3e441b1) revision 9106371'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'ko' Physical Memory: 16178 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker11
+-projectPath
+C:/Users/tg859/바탕 화면/unity/reAngZ/AngZ
+-logFile
+Logs/AssetImportWorker11.log
+-srvPort
+64710
+Successfully changed project path to: C:/Users/tg859/바탕 화면/unity/reAngZ/AngZ
+C:/Users/tg859/바탕 화면/unity/reAngZ/AngZ
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 214.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.12f1 (8af3c3e441b1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/tg859/바탕 화면/unity/reAngZ/AngZ/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 620 (ID=0x3ea0)
+    Vendor:   Intel
+    VRAM:     8089 MB
+    Driver:   31.0.101.2111
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56604
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.027555 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 134.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.148 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1149ms)
+		BeginReloadAssembly (192ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (750ms)
+			LoadAssemblies (186ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (168ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (449ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (88ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (135ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (134ms)
+				ProcessInitializeOnLoadMethodAttributes (87ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.029076 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\tg859\바탕 화면\unity\reAngZ\AngZ\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\tg859\바탕 화면\unity\reAngZ\AngZ\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.070 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4071ms)
+		BeginReloadAssembly (508ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (29ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (139ms)
+		EndReloadAssembly (2623ms)
+			LoadAssemblies (403ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (808ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (179ms)
+			SetupLoadedEditorAssemblies (1098ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (51ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (299ms)
+				ProcessInitializeOnLoadAttributes (639ms)
+				ProcessInitializeOnLoadMethodAttributes (66ms)
+				AfterProcessingInitializeOnLoad (39ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (49ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 1.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3645 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (114.6 KB). Loaded Objects now: 4121.
+Memory consumption went from 161.2 MB to 161.1 MB.
+Total: 7.048700 ms (FindLiveObjects: 0.375300 ms CreateObjectMapping: 0.309000 ms MarkObjects: 6.153200 ms  DeleteObjects: 0.209600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.041487 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\tg859\바탕 화면\unity\reAngZ\AngZ\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\tg859\바탕 화면\unity\reAngZ\AngZ\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.194 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3196ms)
+		BeginReloadAssembly (423ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (89ms)
+		EndReloadAssembly (2459ms)
+			LoadAssemblies (433ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (783ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (108ms)
+			SetupLoadedEditorAssemblies (988ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (70ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (246ms)
+				ProcessInitializeOnLoadAttributes (537ms)
+				ProcessInitializeOnLoadMethodAttributes (85ms)
+				AfterProcessingInitializeOnLoad (47ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (65ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 10.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3619 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (81.7 KB). Loaded Objects now: 4125.
+Memory consumption went from 159.0 MB to 158.9 MB.
+Total: 8.808400 ms (FindLiveObjects: 0.550000 ms CreateObjectMapping: 0.422000 ms MarkObjects: 7.604200 ms  DeleteObjects: 0.230400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 222740.380714 seconds.
+  path: Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Billboards/Conifer Bare_BillboardAsset.asset
+  artifactKey: Guid(745760c8ac5934904ab25d5a8942ad44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Billboards/Conifer Bare_BillboardAsset.asset using Guid(745760c8ac5934904ab25d5a8942ad44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '179cadffde12c43356580001ab9c591d') in 0.385455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Animations/Female@idle.fbx
+  artifactKey: Guid(1bbbf84fd5c7b764eb712acada99966c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Animations/Female@idle.fbx using Guid(1bbbf84fd5c7b764eb712acada99966c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8ee381616df50386acbdead1afb560a') in 0.113940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Billboards/Conifer Tall_BillboardMaterial.mat
+  artifactKey: Guid(cb64c4536ee5b445783c428f4a53af1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Billboards/Conifer Tall_BillboardMaterial.mat using Guid(cb64c4536ee5b445783c428f4a53af1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bec7f878a5e254e5293662499ad26e2b') in 0.103709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Conifers [BOTD]/Shared Sources/Textures/Billboards/Billboard Small/Conifer Small [Albedo].png
+  artifactKey: Guid(1cf8efa437ce542e3a933a95bf4708b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Shared Sources/Textures/Billboards/Billboard Small/Conifer Small [Albedo].png using Guid(1cf8efa437ce542e3a933a95bf4708b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '223daf4ef20feda0cde91ad3b9ae55a9') in 0.074742 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Billboards/Conifer Small_BillboardAsset.asset
+  artifactKey: Guid(86bac913b9dd5493b91b9b1c25706db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Billboards/Conifer Small_BillboardAsset.asset using Guid(86bac913b9dd5493b91b9b1c25706db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f110ee67e454d05ec797f2913c39704') in 0.052950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Billboards/Conifer Medium_BillboardAsset.asset
+  artifactKey: Guid(197c8e740f87245c8bead1e852e09081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Billboards/Conifer Medium_BillboardAsset.asset using Guid(197c8e740f87245c8bead1e852e09081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cacaf646d22fb7431b557109ceac9d1e') in 0.041710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.490050 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Animations/Female@idle_rare_01.fbx
+  artifactKey: Guid(c05a03232511955458f34093a53eb0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Animations/Female@idle_rare_01.fbx using Guid(c05a03232511955458f34093a53eb0a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d196da469d3ad1fe44127c5a53b8e2c') in 0.024629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Prefabs/Female_multi_materials+simple_faces/Female_01_mm+sf.prefab
+  artifactKey: Guid(6910da781df91e2448d202e7ea6cf6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Prefabs/Female_multi_materials+simple_faces/Female_01_mm+sf.prefab using Guid(6910da781df91e2448d202e7ea6cf6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '927508111c5063d9d7af1ce20a464ee2') in 0.256244 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Prefabs/Female_multi_materials/Female_02_v3_mm.prefab
+  artifactKey: Guid(5f5904ee7b2263c4aa3dcb4a74b7b7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Prefabs/Female_multi_materials/Female_02_v3_mm.prefab using Guid(5f5904ee7b2263c4aa3dcb4a74b7b7a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99e44f2508246277367cc10886920069') in 0.214048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Prefabs/Female_multi_materials+simple_faces/Female_02_mm+sf.prefab
+  artifactKey: Guid(7c8a0b2e2eaabab4883d23ec2a6e9239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Prefabs/Female_multi_materials+simple_faces/Female_02_mm+sf.prefab using Guid(7c8a0b2e2eaabab4883d23ec2a6e9239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acb0f872ab437c7eaecb44ddd69a1281') in 0.297213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Prefabs/Female/Female_02_v3.prefab
+  artifactKey: Guid(267fd457afb69f641bba31db93e39722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Prefabs/Female/Female_02_v3.prefab using Guid(267fd457afb69f641bba31db93e39722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b835e49876c45644f46c7c4a7439a28e') in 0.219982 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Animations/Female@run.fbx
+  artifactKey: Guid(cb17635fdb8d48f4b9a97d9b9ad9cc26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Animations/Female@run.fbx using Guid(cb17635fdb8d48f4b9a97d9b9ad9cc26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7da75ef018deaf410e4f832f4e9f5ca') in 0.044632 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Prefabs/Female/Female_02.prefab
+  artifactKey: Guid(d6a2915f0ea4a0e4080d6d847001c6e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Prefabs/Female/Female_02.prefab using Guid(d6a2915f0ea4a0e4080d6d847001c6e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e711d112a0990446362362517ac2b601') in 0.246105 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Prefabs/Female_multi_materials+simple_faces/Female_02_v2_mm+sf.prefab
+  artifactKey: Guid(96f97443706fc7148966795426da6eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Prefabs/Female_multi_materials+simple_faces/Female_02_v2_mm+sf.prefab using Guid(96f97443706fc7148966795426da6eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9acf6c40f819333e430b1457b422dbeb') in 0.359263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Prefabs/Female_simple_faces/Female_01_v2_sf.prefab
+  artifactKey: Guid(2619a8fe3e359b740a312254216996cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Prefabs/Female_simple_faces/Female_01_v2_sf.prefab using Guid(2619a8fe3e359b740a312254216996cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd703e290c7bcfdd68fa00595c8c1afb0') in 0.163766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Prefabs/Female_multi_materials+simple_faces/Female_01_v3_mm+sf.prefab
+  artifactKey: Guid(a2b41ae9f61694d47a8df62ff6e110d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Prefabs/Female_multi_materials+simple_faces/Female_01_v3_mm+sf.prefab using Guid(a2b41ae9f61694d47a8df62ff6e110d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17d5b6916ae1f361f4d2db70d2237df8') in 0.242024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Prefabs/Female_simple_faces/Female_01_v3_sf.prefab
+  artifactKey: Guid(05c5a3750f634dc45ba50f98413a87e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Prefabs/Female_simple_faces/Female_01_v3_sf.prefab using Guid(05c5a3750f634dc45ba50f98413a87e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f13669548772bf94e22a2150098e146') in 0.187683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Prefabs/Female/Female_02_v2.prefab
+  artifactKey: Guid(cab81313846a3ad49b8fa3de4d257d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Prefabs/Female/Female_02_v2.prefab using Guid(cab81313846a3ad49b8fa3de4d257d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17ce80426046c63ea33749581b817bc9') in 0.241389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Prefabs/Female_simple_faces/Female_02_v2_sf.prefab
+  artifactKey: Guid(dd568f31fa1c36a498779ab48084e38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Prefabs/Female_simple_faces/Female_02_v2_sf.prefab using Guid(dd568f31fa1c36a498779ab48084e38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10d402e51b64aeaa49fe32b1fef855ae') in 0.163580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Animations/Female@walk.fbx
+  artifactKey: Guid(ac92a20bfd4fcdc4ea403a3b0774815b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Animations/Female@walk.fbx using Guid(ac92a20bfd4fcdc4ea403a3b0774815b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '710a8b9e821f1e65304d14158d35b6a3') in 0.038420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Prefabs/Female_simple_faces/Female_01_sf.prefab
+  artifactKey: Guid(c2a9c0c9785ea5345888255040ddcf67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Prefabs/Female_simple_faces/Female_01_sf.prefab using Guid(c2a9c0c9785ea5345888255040ddcf67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90f57e28d48afea9ab4ac7cfad928f71') in 0.140113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Prefabs/Female_multi_materials+simple_faces/Female_01_v4_mm+sf.prefab
+  artifactKey: Guid(2bb0f13e384ce71438a2f3e6380c55fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Prefabs/Female_multi_materials+simple_faces/Female_01_v4_mm+sf.prefab using Guid(2bb0f13e384ce71438a2f3e6380c55fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '338212236ee3f65c5560b2197f24922e') in 0.292227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Prefabs/Female/Female_01.prefab
+  artifactKey: Guid(d6cb8adf779ea5f4eb838e55b326cf25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Prefabs/Female/Female_01.prefab using Guid(d6cb8adf779ea5f4eb838e55b326cf25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72ce5112d2d1eec1d163431e3c7527d8') in 0.311231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.720040 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Animations/Male@idle.fbx
+  artifactKey: Guid(cb6ce03a11249a241b7e4048a65e0622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Animations/Male@idle.fbx using Guid(cb6ce03a11249a241b7e4048a65e0622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5f3cf753be6059104ba9fe68d45acde') in 0.034196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Animations/Male_Pack_01@Running Up Stairs.fbx
+  artifactKey: Guid(0b4473ca3a331ef4e9bb65f2e58c0284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Animations/Male_Pack_01@Running Up Stairs.fbx using Guid(0b4473ca3a331ef4e9bb65f2e58c0284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a642d31ee6b80ef47cf6c242c1f7eb') in 0.033277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Animations/Male@walk.fbx
+  artifactKey: Guid(d77818df6a8ec074081e437ff805b3bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Animations/Male@walk.fbx using Guid(d77818df6a8ec074081e437ff805b3bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a531ff1a7ffb314130147710ad4c6d52') in 0.021142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/GreenTree/CharactersCityPack1/Animations/Male_Pack_01@Hip Hop Dancing (1).fbx
+  artifactKey: Guid(0f0133b5ccbdd834f80bd733ad315086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GreenTree/CharactersCityPack1/Animations/Male_Pack_01@Hip Hop Dancing (1).fbx using Guid(0f0133b5ccbdd834f80bd733ad315086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e65a60db91e73298d56f787e007465c') in 0.028586 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

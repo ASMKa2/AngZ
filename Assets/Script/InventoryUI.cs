@@ -13,7 +13,7 @@ public class InventoryUI : MonoBehaviour
     }
 
     void Update(){
-        if(Input.GetKeyDown(KeyCode.S)){
+        if(Input.GetKeyDown(KeyCode.Q)){
             Sex = !Sex;
             if(activeInventory){
                 activeInventory = !activeInventory;
