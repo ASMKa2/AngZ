@@ -6,7 +6,7 @@ public class CameraMovement : MonoBehaviour
 {
     public Transform objectTofollow;
     public float followSpeed = 10f;
-    public float sensitivity = 100f;
+    public float sensitivity = 500f;
     public float clampAngle = 70f;
     public float ScrollSpeed = 1f;
 
@@ -50,7 +50,7 @@ public class CameraMovement : MonoBehaviour
         Quaternion rot = Quaternion.Euler(rotX, rotY, 0);
         transform.rotation = rot;
 
-        
+        if (Input.GetKey(KeyCode.M)) ScrollWheel = -0.5f;
         ScrollWheel += Input.GetAxis("Mouse ScrollWheel");
 
     }

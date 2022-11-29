@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         //����� photoninit���� loadscene�ϰ� ���⼭ avatar ����.
         //photoninit�� select tema ���� create room �ϱ� ���� avatar ���� ��� ������ �̵��ߴٰ� ����
         //�°��� �����س��� �ƹ�Ÿ ���̵� �ڵ� �м�����
+        // MapEdit();
         CreateMale();
         PhotonNetwork.IsMessageQueueRunning = true;
     }
@@ -35,6 +36,11 @@ public class GameManager : MonoBehaviourPunCallbacks
                 Send();
             }
         }
+    }
+
+    void MapEdit()
+    {
+
     }
 
     void CreateMale()
