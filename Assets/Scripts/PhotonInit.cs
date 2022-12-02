@@ -19,7 +19,9 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         ROOM_LIST = 3,
         ROOM_OPTIONS = 4,
         PASSWORD = 5,
-        PASSWORD_WRONG = 6
+        PASSWORD_WRONG = 6,
+        LOADING = 7,
+        QUIT = 8
     }
     public ActivePanel activePanel = ActivePanel.LOGIN;
 
@@ -52,7 +54,25 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         txtRoomName.text = PlayerPrefs.GetString("ROOM_NAME", "ROOM_" + Random.Range(1, 999));
         password.text = PlayerPrefs.GetString("PASSWORD", "");
 
+        PlayerPrefs.SetInt("isCreator", 0);
+    }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            panels[(int)ActivePanel.QUIT].SetActive(true);
+        }
+    }
+
+    public void QuitPanelOff()
+    {
+        panels[(int)ActivePanel.QUIT].SetActive(false);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
     #region SELF_CALLBACK_FUNCTIONS
@@ -126,12 +146,13 @@ public class PhotonInit : MonoBehaviourPunCallbacks
 
     public void OnCreateRoom()
     {
+        PlayerPrefs.SetInt("isCreator", 1);
         RoomOptions roomOptions = new RoomOptions();
         byte[] players = System.Text.Encoding.UTF8.GetBytes(txtMaxPlayers.text);
 
         byte result = 0;
 
-        if (players.Length > 2)
+        if (players.Length > 2 || players.Length <= 0)
         {
             result = 99;
         }
@@ -199,6 +220,8 @@ public class PhotonInit : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         Debug.Log("Connect To Master");
+        ChangePanel(ActivePanel.LOGIN);
+
         // PhotonNetwork.JoinRandomRoom();
         PhotonNetwork.JoinLobby();
     }
@@ -308,6 +331,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
 
         // 페이지에 맞는 리스트 대입
         multiple = (currentPage - 1) * CellBtn.Length;
+        Debug.Log(CellBtn.Length);
         for (int i = 0; i < CellBtn.Length; i++)
         {
             CellBtn[i].interactable = (multiple + i < myList.Count) ? true : false;
