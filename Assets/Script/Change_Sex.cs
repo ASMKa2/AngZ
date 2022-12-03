@@ -18,7 +18,7 @@ public class Change_Sex : MonoBehaviour
     void Update()
     {
         Vector3 pos;
-        if(Input.GetKeyDown(KeyCode.S)){
+        if(Input.GetKeyDown(KeyCode.Q)){
             Sex = !Sex;
             if(Sex){
                 pos = transform.GetChild(1).transform.position;
@@ -32,6 +32,7 @@ public class Change_Sex : MonoBehaviour
                 transform.GetChild(1).gameObject.SetActive(true);
                 transform.GetChild(0).gameObject.SetActive(false);
             }
+            GameObject.Find("Camera").GetComponent<CameraMovement>().ChangeSex();
         }
         
     }

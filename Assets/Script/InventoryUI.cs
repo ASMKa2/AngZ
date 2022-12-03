@@ -13,7 +13,8 @@ public class InventoryUI : MonoBehaviour
     }
 
     void Update(){
-        if(Input.GetKeyDown(KeyCode.S)){
+        if (GameObject.Find("SnowmanGenerator").GetComponent<SnowmanGenerate>().mode != -1) return;
+        if(Input.GetKeyDown(KeyCode.Q)){
             Sex = !Sex;
             if(activeInventory){
                 activeInventory = !activeInventory;

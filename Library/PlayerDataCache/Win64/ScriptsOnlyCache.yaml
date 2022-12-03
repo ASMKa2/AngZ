@@ -148,10 +148,13 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: PhotonInit
-    methodName: OnBackToInit
+    methodName: MyListClick
   - assembly: Assembly-CSharp
     fullTypeName: PhotonInit
     methodName: MyListClick
+  - assembly: Assembly-CSharp
+    fullTypeName: PhotonInit
+    methodName: OnBackToInit
   - assembly: Assembly-CSharp
     fullTypeName: PhotonInit
     methodName: MyListClick
@@ -172,16 +175,16 @@ ScriptsOnlyBuild:
     methodName: MyListClick
   - assembly: Assembly-CSharp
     fullTypeName: PhotonInit
-    methodName: MyListClick
-  - assembly: Assembly-CSharp
-    fullTypeName: PhotonInit
-    methodName: MyListClick
-  - assembly: Assembly-CSharp
-    fullTypeName: PhotonInit
     methodName: OnBackToInit
   - assembly: Assembly-CSharp
     fullTypeName: PhotonInit
     methodName: ToggleClick
+  - assembly: Assembly-CSharp
+    fullTypeName: PhotonInit
+    methodName: MyListClick
+  - assembly: Assembly-CSharp
+    fullTypeName: PhotonInit
+    methodName: MyListClick
   - assembly: Assembly-CSharp
     fullTypeName: PhotonInit
     methodName: OnBackToRoomOptions
@@ -214,19 +217,16 @@ ScriptsOnlyBuild:
     methodName: OnPasswordClick
   - assembly: Assembly-CSharp
     fullTypeName: PhotonInit
+    methodName: ToggleClick
+  - assembly: Assembly-CSharp
+    fullTypeName: PhotonInit
     methodName: OnBackToInit
   - assembly: Assembly-CSharp
     fullTypeName: PhotonInit
     methodName: SelectTema_2
   - assembly: Assembly-CSharp
-    fullTypeName: PhotonInit
-    methodName: MyListClick
-  - assembly: Assembly-CSharp
-    fullTypeName: EqChange
-    methodName: BottomEq
-  - assembly: Assembly-CSharp
-    fullTypeName: EqChange
-    methodName: TopEq
+    fullTypeName: SnowmanGenerate
+    methodName: ExitEditMode
   - assembly: Assembly-CSharp
     fullTypeName: EqChange
     methodName: HeadEq
@@ -234,11 +234,20 @@ ScriptsOnlyBuild:
     fullTypeName: EqChange
     methodName: HairEq
   - assembly: Assembly-CSharp
-    fullTypeName: GameManager
-    methodName: QuitGame
+    fullTypeName: EqChange
+    methodName: BottomEq
   - assembly: Assembly-CSharp
-    fullTypeName: GameManager
-    methodName: QuitPanelOff
+    fullTypeName: EqChange
+    methodName: HairEq
+  - assembly: Assembly-CSharp
+    fullTypeName: EqChange
+    methodName: TopEq
+  - assembly: Assembly-CSharp
+    fullTypeName: EqChange
+    methodName: TopEq
+  - assembly: Assembly-CSharp
+    fullTypeName: EqChange
+    methodName: BottomEq
   - assembly: Assembly-CSharp
     fullTypeName: SnowmanGenerate
     methodName: ChangeToMove
@@ -260,6 +269,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: SnowmanGenerate
     methodName: ChangeToWell
+  - assembly: Assembly-CSharp
+    fullTypeName: EqChange
+    methodName: HeadEq
   sceneClasses:
     Assets/Scenes/Metaverse/Scene_LectureRoom.unity:
     - Class: 1
@@ -417,11 +429,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -462,6 +482,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4814}
     - Class: 114
+      Script: {instanceID: 4990}
+    - Class: 114
       Script: {instanceID: 5160}
     - Class: 114
       Script: {instanceID: 5436}
@@ -470,7 +492,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5868}
     - Class: 114
+      Script: {instanceID: 5882}
+    - Class: 114
       Script: {instanceID: 5944}
+    - Class: 114
+      Script: {instanceID: 6070}
+    - Class: 114
+      Script: {instanceID: 6302}
     - Class: 114
       Script: {instanceID: 6558}
     - Class: 114
@@ -482,20 +510,30 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7106}
     - Class: 114
+      Script: {instanceID: 7108}
+    - Class: 114
       Script: {instanceID: 7450}
     - Class: 114
       Script: {instanceID: 7494}
     - Class: 114
       Script: {instanceID: 7906}
     - Class: 114
+      Script: {instanceID: 8052}
+    - Class: 114
       Script: {instanceID: 8364}
     - Class: 114
       Script: {instanceID: 8626}
+    - Class: 114
+      Script: {instanceID: 8772}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 143
       Script: {instanceID: 0}
     - Class: 154
       Script: {instanceID: 0}
@@ -1391,7 +1429,7 @@ ScriptsOnlyBuild:
     className: BetterToggle
   - hash:
       serializedVersion: 2
-      Hash: 1a95386d1c9eec303d1858e8e0d8d133
+      Hash: fa32f9875e76e86430b0d17f35e50495
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraMovement
@@ -1901,7 +1939,7 @@ ScriptsOnlyBuild:
     className: Highlighter
   - hash:
       serializedVersion: 2
-      Hash: 9e29c894276304d834ac2f75e1ce82c3
+      Hash: 71f239ae9a19f9aca91d8d635ca22a25
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -1991,7 +2029,7 @@ ScriptsOnlyBuild:
     className: PlayerControl
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 5a61dadeddeb6b88d4ab23f3f0fa8379
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpecialAnim
@@ -2099,7 +2137,7 @@ ScriptsOnlyBuild:
     className: PunCockpit
   - hash:
       serializedVersion: 2
-      Hash: 3d0afaa8951b4e8be58a91c653fd0624
+      Hash: 0b95ecc7f467820a1e1626207df09b2b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PhotonInit
@@ -2213,7 +2251,7 @@ ScriptsOnlyBuild:
     className: ThirdPersonCharacter
   - hash:
       serializedVersion: 2
-      Hash: 0427a5d4154eee68bde358548c04c02c
+      Hash: a0303959efb7f3b818de229d42487aaf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SnowmanGenerate
@@ -2776,4 +2814,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Metaverse/Scene_Street.unity
   - Assets/Scenes/Metaverse/Scene_Nature.unity
   - Assets/Scenes/Metaverse/Scene_LectureRoom.unity
-  playerPath: C:/Users/kayso/Desktop/unity/with voice/snowtest.exe
+  playerPath: C:/Users/user/capstone_design/AngZ/snowtest.exe

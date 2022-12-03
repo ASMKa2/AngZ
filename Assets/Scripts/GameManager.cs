@@ -10,11 +10,12 @@ public class GameManager : MonoBehaviourPunCallbacks
 {
     private int isCreator;
 
-    
+    public GameObject VoiceObject;
 
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("GameManger Start");
         //Insert functions for loading scene for avatar creation
         //����� photoninit���� loadscene�ϰ� ���⼭ avatar ����.
         //photoninit�� select tema ���� create room �ϱ� ���� avatar ���� ��� ������ �̵��ߴٰ� ����
@@ -22,6 +23,12 @@ public class GameManager : MonoBehaviourPunCallbacks
         // MapEdit();
 
         isCreator = PlayerPrefs.GetInt("isCreator");
+        Debug.Log("isCreator");
+        Debug.Log(isCreator);
+        if (PlayerPrefs.GetInt("isVoice") == 0)
+        {
+            VoiceObject.SetActive(false);
+        }
 
         if (isCreator == 0)
         {
@@ -29,22 +36,27 @@ public class GameManager : MonoBehaviourPunCallbacks
             // 1. 물건 생성하는 panel off
             // 2. 카메라 이동작업
         }
+        else if (isCreator == 1)
+        {
+            GameObject.Find("Camera").GetComponent<CameraControl>().editCameraOn();
+        }
         PhotonNetwork.IsMessageQueueRunning = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        /*
         if (isCreator == 1 && Input.GetKeyDown(KeyCode.M))
         {
             CreateHuman();
         }
+        */
         if (Input.GetKeyDown(KeyCode.Return))
         {
             if (!isChatPanelActive)
             {
                 isChatPanelActive = true;
-                Debug.Log(isChatPanelActive);
                 ChatPanel.SetActive(true);
             }
             else
@@ -77,9 +89,11 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     }
 
-    void CreateHuman()
+    public void CreateHuman()
     {
-        PhotonNetwork.Instantiate("human", new Vector3(688.66f, 30f, 692.83f), Quaternion.identity);
+        PhotonNetwork.Instantiate("human", new Vector3(688.66f, 10f, 692.83f), Quaternion.identity);
+
+        GameObject.Find("CameraController").GetComponent<CameraControl>().mainCameraOn();
     }
 
     #region CHAT
@@ -94,14 +108,10 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     public void Send()
     {
-        Debug.Log(ChatInput.text.ToString());
         if (ChatInput.text.ToString() == "")
         {
-            Debug.Log("????");
             isChatPanelActive = false;
             ChatPanel.SetActive(false); 
-            Debug.Log(isChatPanelActive);
-
         }
         else
         {

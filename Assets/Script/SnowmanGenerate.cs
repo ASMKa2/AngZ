@@ -10,12 +10,13 @@ public class SnowmanGenerate : MonoBehaviour
 
     public string str;
     public GameObject prefab_obj;
+    GameObject WorldEdit;
     GameObject background;
     GameObject DestroyObj;
     GameObject SelectedObj;
     Vector3 ScreenPos;
     Vector3 RealPos;
-    int mode;
+    public int mode;
     bool selected;
     Ray ray;
     RaycastHit hitData;
@@ -127,23 +128,32 @@ public class SnowmanGenerate : MonoBehaviour
         mode = 2;
     }
 
+    public void ExitEditMode()
+    {
+        mode = -1;
+        WorldEdit.SetActive(false);
+        GameObject.Find("GameManager").GetComponent<GameManager>().CreateHuman();
+        GameObject.Find("CameraController").GetComponent<CameraControl>().mainCameraOn();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        mode = 0;
+        mode = -1;
         background = GameObject.Find("Terrain");
+        WorldEdit = GameObject.Find("WorldEdit");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
         if (Input.GetMouseButtonDown(0))
         {
             if (EventSystem.current.IsPointerOverGameObject() == true) return;
             if (mode == 0) NewObject();
             else if (mode == 1) DestroyObject();
             else if (mode == 2) SelectObject();
+            else return;
         }
     }
 }

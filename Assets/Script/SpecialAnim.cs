@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
-public class SpecialAnim : MonoBehaviour
+public class SpecialAnim : MonoBehaviourPunCallbacks
 {
-
+    public PhotonView PV;
     Animator anim;
     // Start is called before the first frame update
     void Start()
@@ -15,7 +17,14 @@ public class SpecialAnim : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F)) anim.SetTrigger("dance");
+        if (!PV.IsMine)
+        {
+            return;
+        }
+
+        if (Input.anyKey) anim.SetBool("dance1", false);
+        else anim.SetBool("dance1", true);
+        if (Input.GetKeyDown(KeyCode.F1)) anim.SetTrigger("dance");
         else if (Input.GetKeyDown(KeyCode.Space)) anim.SetTrigger("jump");
     }
 }

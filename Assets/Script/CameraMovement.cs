@@ -6,7 +6,7 @@ using Photon.Realtime;
 
 public class CameraMovement : MonoBehaviour
 {
-    Transform human;
+    public Transform human;
     GameObject male;
     GameObject female;
     public Transform objectTofollow;
@@ -27,14 +27,31 @@ public class CameraMovement : MonoBehaviour
     public float maxDistance;
     public float finalDistance;
     public float smoothness = 10f;
+    int editmode;
+    int sex;
 
-    int sex = 0;
+    public void mainCameraSet()
+    {
+        Debug.Log("main camera set");
+        editmode = 0;
+        //human = GameObject.Find("human(Clone)").GetComponent<Transform>();
+
+        objectTofollow = human.GetChild(sex).transform.Find("FollowCam").gameObject.GetComponent<Transform>();
+        ScrollWheel = -0.5f;
+    }
+
+    public void ChangeSex()
+    {
+        sex = 1 - sex;
+        objectTofollow = human.GetChild(sex).transform.Find("FollowCam").gameObject.GetComponent<Transform>();
+    }
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        editmode = 1;
+        sex = 0;
         rotX = transform.localRotation.eulerAngles.x;
         rotY = transform.localRotation.eulerAngles.y;
 
@@ -60,19 +77,9 @@ public class CameraMovement : MonoBehaviour
         Quaternion rot = Quaternion.Euler(rotX, rotY, 0);
         transform.rotation = rot;
 
-        if (Input.GetKey(KeyCode.M))
+        if (editmode == 0 && Input.GetKey(KeyCode.Q))
         {
-            human = GameObject.Find("human(Clone)").GetComponent<Transform>();
-            //male = human.Find("Male").transform.Find("FollowCam").gameObject;
-            //female = human.Find("Female").transform.Find("FollowCam").gameObject;
-
-            objectTofollow = human.GetChild(sex).transform.Find("FollowCam").gameObject.GetComponent<Transform>();
-            ScrollWheel = -0.5f;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            sex = 1 - sex;
-            objectTofollow = human.GetChild(sex).transform.Find("FollowCam").gameObject.GetComponent<Transform>();
+            ChangeSex();
         }
         ScrollWheel += Input.GetAxis("Mouse ScrollWheel");
 
@@ -80,6 +87,7 @@ public class CameraMovement : MonoBehaviour
 
     void LateUpdate()
     {
+
         transform.position = Vector3.MoveTowards(transform.position, objectTofollow.position, followSpeed + Time.deltaTime);
 
         finalDir = transform.TransformPoint(dirNormalized * maxDistance);

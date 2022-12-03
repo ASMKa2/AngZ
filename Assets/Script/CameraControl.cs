@@ -9,14 +9,16 @@ public class CameraControl : MonoBehaviour
 
     GameObject male;
 
-    void mainCameraOn()
+    public void mainCameraOn()
     {
+        
         mainCam.SetActive(true);
         editCam.SetActive(false);
+        GameObject.Find("Camera").GetComponent<CameraMovement>().mainCameraSet();
         //male.SetActive(true);
     }
 
-    void editCameraOn()
+    public void editCameraOn()
     {
         mainCam.SetActive(false);
         editCam.SetActive(true);
@@ -27,14 +29,14 @@ public class CameraControl : MonoBehaviour
     void Start()
     {
         //male = GameObject.Find("Male");
-        editCameraOn();
+        Debug.Log("CameraControl Creator");
+        Debug.Log(PlayerPrefs.GetInt("IsCreator"));
+        //if (PlayerPrefs.GetInt("IsCreator") == 1) editCameraOn();
+        //else mainCameraOn();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M)) {
-            mainCameraOn();
-        }
     }
 }
