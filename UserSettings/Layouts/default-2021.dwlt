@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 106
+  controlID: 103
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -653,7 +653,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 688.6544, y: 30.971657, z: 692.82623}
     speed: 2
-    m_Value: {x: 519.7, y: 27.791954, z: 673}
+    m_Value: {x: 688.6544, y: 30.971657, z: 692.82623}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -702,11 +702,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.2734892, y: 0.057412777, z: -0.016292628, w: -0.9600675}
     speed: 2
-    m_Value: {x: -0.080627166, y: 0.917611, z: -0.24360009, w: -0.30355957}
+    m_Value: {x: -0.2734892, y: 0.057412777, z: -0.016292628, w: -0.9600675}
   m_Size:
     m_Target: 27.18586
     speed: 2
-    m_Value: 22.151852
+    m_Value: 27.18586
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -870,22 +870,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Packages
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Packages
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\user\capstone_design\AngZ
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0a640000
-    m_LastClickedID: 25610
-    m_ExpandedIDs: 000000000a64000000ca9a3b
+    m_SelectedIDs: ffffff7f
+    m_LastClickedID: 2147483647
+    m_ExpandedIDs: 0000000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
