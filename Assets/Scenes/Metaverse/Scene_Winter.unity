@@ -1531,7 +1531,7 @@ MonoBehaviour:
   voiceDetectionThreshold: 0.01
   voiceDetectionDelayMs: 500
   interestGroup: 0
-  debugEchoMode: 1
+  debugEchoMode: 0
   reliableMode: 0
   encrypt: 0
   transmitEnabled: 1
@@ -2140,6 +2140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef997ffc6841f084c967e17df4e1b566, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VoiceObject: {fileID: 0}
   QuitPanel: {fileID: 1336345735}
   ChatPanel: {fileID: 1883033773}
   ChatText:
