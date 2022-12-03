@@ -34,6 +34,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
     public TMP_InputField txtMaxPlayers;
 
     public Toggle toggleLocked;
+    public Toggle toggleVoice;
     public TMP_InputField password;
 
     public TMP_InputField passwordTried;
@@ -103,7 +104,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         ChangePanel(ActivePanel.ROOM_OPTIONS);
     }
 
-    public void ToggleClick(bool isOn)
+    public void ToggleLockClick(bool isOn)
     {
         int isLocked;
         if (isOn)
@@ -147,6 +148,18 @@ public class PhotonInit : MonoBehaviourPunCallbacks
     public void OnCreateRoom()
     {
         PlayerPrefs.SetInt("isCreator", 1);
+
+        Debug.Log("toggleVoice Create Room");
+        Debug.Log(toggleVoice.isOn);
+        if (toggleVoice.isOn)
+        {
+            PlayerPrefs.SetInt("isVoice", 1);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("isVoice", 0);
+        }
+
         RoomOptions roomOptions = new RoomOptions();
         byte[] players = System.Text.Encoding.UTF8.GetBytes(txtMaxPlayers.text);
 
@@ -167,14 +180,17 @@ public class PhotonInit : MonoBehaviourPunCallbacks
 
         roomOptions.MaxPlayers = result;
 
+        Debug.Log(toggleVoice.isOn);
         roomOptions.CustomRoomProperties = new Hashtable() {
             {"roomName", txtRoomName.text },
             {"isLocked", toggleLocked.isOn },
+            {"isVoice", toggleVoice.isOn },
             {"password", password.text }
         };
         roomOptions.CustomRoomPropertiesForLobby = new string[] {
             "roomName",
             "isLocked",
+            "isVoice",
             "password",
         };
         PhotonNetwork.CreateRoom(txtRoomName.text
@@ -331,10 +347,39 @@ public class PhotonInit : MonoBehaviourPunCallbacks
 
         // 페이지에 맞는 리스트 대입
         multiple = (currentPage - 1) * CellBtn.Length;
-        Debug.Log(CellBtn.Length);
+        Debug.Log(myList.Count);
         for (int i = 0; i < CellBtn.Length; i++)
         {
             CellBtn[i].interactable = (multiple + i < myList.Count) ? true : false;
+            if (multiple + i < myList.Count)
+            {
+                Hashtable ht = myList[multiple + i].CustomProperties;
+                bool isLocked = System.Convert.ToBoolean(ht["isLocked"]);
+                bool isVoice = System.Convert.ToBoolean(ht["isVoice"]);
+                Debug.Log(isVoice);
+
+                if (isLocked)
+                {
+                    CellBtn[i].transform.GetChild(2).GetComponent<RawImage>().enabled = true;
+                }
+                else
+                {
+                    CellBtn[i].transform.GetChild(2).GetComponent<RawImage>().enabled = false;
+                }
+                if (isVoice)
+                {
+                    CellBtn[i].transform.GetChild(3).GetComponent<RawImage>().enabled = true;
+                }
+                else
+                {
+                    CellBtn[i].transform.GetChild(3).GetComponent<RawImage>().enabled = false;
+                }
+            }
+            else
+            {
+                CellBtn[i].transform.GetChild(2).GetComponent<RawImage>().enabled = false;
+                CellBtn[i].transform.GetChild(3).GetComponent<RawImage>().enabled = false;
+            }
             CellBtn[i].transform.GetChild(0).GetComponent<TMP_Text>().text = (multiple + i < myList.Count) ? myList[multiple + i].Name : "";
             CellBtn[i].transform.GetChild(1).GetComponent<TMP_Text>().text = (multiple + i < myList.Count) ? myList[multiple + i].PlayerCount + "/" + myList[multiple + i].MaxPlayers : "";
         }
@@ -354,7 +399,5 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         }
         MyListRenewal();
     }
-    #endregion
- 
-    
+    #endregion    
 }

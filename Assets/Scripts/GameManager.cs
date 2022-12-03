@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviourPunCallbacks
 {
     private int isCreator;
 
-    
+    public GameObject VoiceObject;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +22,10 @@ public class GameManager : MonoBehaviourPunCallbacks
         // MapEdit();
 
         isCreator = PlayerPrefs.GetInt("isCreator");
+        if (PlayerPrefs.GetInt("isVoice") == 0)
+        {
+            VoiceObject.SetActive(false);
+        }
 
         if (isCreator == 0)
         {

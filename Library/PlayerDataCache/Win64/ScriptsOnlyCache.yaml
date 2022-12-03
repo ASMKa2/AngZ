@@ -60,10 +60,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -181,7 +179,7 @@ ScriptsOnlyBuild:
     methodName: OnBackToInit
   - assembly: Assembly-CSharp
     fullTypeName: PhotonInit
-    methodName: ToggleClick
+    methodName: ToggleLockClick
   - assembly: Assembly-CSharp
     fullTypeName: PhotonInit
     methodName: OnBackToRoomOptions
@@ -1901,7 +1899,7 @@ ScriptsOnlyBuild:
     className: Highlighter
   - hash:
       serializedVersion: 2
-      Hash: 9e29c894276304d834ac2f75e1ce82c3
+      Hash: 71f239ae9a19f9aca91d8d635ca22a25
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -2099,7 +2097,7 @@ ScriptsOnlyBuild:
     className: PunCockpit
   - hash:
       serializedVersion: 2
-      Hash: 3d0afaa8951b4e8be58a91c653fd0624
+      Hash: 0b95ecc7f467820a1e1626207df09b2b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PhotonInit
