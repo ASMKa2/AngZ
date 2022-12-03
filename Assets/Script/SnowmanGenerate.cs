@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine.EventSystems;
 
 public class SnowmanGenerate : MonoBehaviour
 {
@@ -29,13 +30,13 @@ public class SnowmanGenerate : MonoBehaviour
 
     void InstantiateAtTarget()
     {
-        GameObject bullet = Instantiate(prefab_obj, new Vector3(RealPos.x, RealPos.y, RealPos.z), Quaternion.identity);
+        GameObject bullet = PhotonNetwork.Instantiate(str, new Vector3(RealPos.x, RealPos.y, RealPos.z), Quaternion.identity);
         if (str == "Swing") bullet.transform.Rotate(new Vector3(-90.0f, 0, 0));
     }
 
     void NewObject()
     {
-        prefab_obj = Resources.Load<GameObject>(str);
+        //prefab_obj = Resources.Load<GameObject>(str);
         CalculatePos();
         InstantiateAtTarget();
     }
@@ -46,19 +47,19 @@ public class SnowmanGenerate : MonoBehaviour
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         Physics.Raycast(ray, out hitData);
         DestroyObj = hitData.collider.gameObject;
-        if (DestroyObj != background) Destroy(DestroyObj);
+        if (DestroyObj != background) PhotonNetwork.Destroy(DestroyObj);
     }
 
     void SelectObject()
     {
-        if (selected  == true)
+        ScreenPos = Input.mousePosition;
+        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Physics.Raycast(ray, out hitData);
+        if (selected == true)
         {
-            ScreenPos = Input.mousePosition;
-            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Physics.Raycast(ray, out hitData);
             GameObject NewSelectedObj = hitData.collider.gameObject;
-            Debug.Log(NewSelectedObj.name);
-            Debug.Log(NewSelectedObj.transform.position);
+            //Debug.Log(NewSelectedObj.name);
+            // Debug.Log(NewSelectedObj.transform.position);
             if (NewSelectedObj == SelectedObj)
             {
                 Debug.Log("here");
@@ -66,16 +67,19 @@ public class SnowmanGenerate : MonoBehaviour
                 selected = false;
                 return;
             }
-            else return;
+            else if (NewSelectedObj == background)
+            {
+                RealPos = hitData.point;
+                SelectedObj.transform.position = Vector3.Lerp(SelectedObj.transform.position, RealPos, 1f);
+            }
         }
-        ScreenPos = Input.mousePosition;
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        Physics.Raycast(ray, out hitData);
-        SelectedObj = hitData.collider.gameObject;
-        Debug.Log(SelectedObj.name);
-        SelectedObj.GetComponentInChildren<Light>().intensity = 20;
-        selected = true;
-        MoveObject();
+        else
+        {
+            SelectedObj = hitData.collider.gameObject;
+            Debug.Log(SelectedObj.name);
+            SelectedObj.GetComponentInChildren<Light>().intensity = 20;
+            selected = true;
+        }
     }
 
     void MoveObject()
@@ -136,6 +140,7 @@ public class SnowmanGenerate : MonoBehaviour
         
         if (Input.GetMouseButtonDown(0))
         {
+            if (EventSystem.current.IsPointerOverGameObject() == true) return;
             if (mode == 0) NewObject();
             else if (mode == 1) DestroyObject();
             else if (mode == 2) SelectObject();

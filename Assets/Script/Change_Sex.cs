@@ -6,12 +6,12 @@ using Photon.Realtime;
 
 public class Change_Sex : MonoBehaviour
 {
-    public bool Sex = false;
+    public bool Sex = true;
     // Start is called before the first frame update
     void Start()
     {
-        transform.GetChild(1).gameObject.SetActive(true);
-        transform.GetChild(0).gameObject.SetActive(false);
+        transform.GetChild(0).gameObject.SetActive(true);
+        transform.GetChild(1).gameObject.SetActive(false);
     }
 
     // Update is called once per frame

@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
 public class CameraMovement : MonoBehaviour
 {
+    Transform human;
+    GameObject male;
+    GameObject female;
     public Transform objectTofollow;
     public float followSpeed = 10f;
     public float sensitivity = 500f;
@@ -23,9 +28,13 @@ public class CameraMovement : MonoBehaviour
     public float finalDistance;
     public float smoothness = 10f;
 
+    int sex = 0;
+
+
     // Start is called before the first frame update
     void Start()
     {
+
         rotX = transform.localRotation.eulerAngles.x;
         rotY = transform.localRotation.eulerAngles.y;
 
@@ -43,6 +52,7 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         rotX += -(Input.GetAxis("Mouse Y")) * sensitivity * Time.deltaTime;
         rotY += Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
 
@@ -50,7 +60,20 @@ public class CameraMovement : MonoBehaviour
         Quaternion rot = Quaternion.Euler(rotX, rotY, 0);
         transform.rotation = rot;
 
-        if (Input.GetKey(KeyCode.M)) ScrollWheel = -0.5f;
+        if (Input.GetKey(KeyCode.M))
+        {
+            human = GameObject.Find("human(Clone)").GetComponent<Transform>();
+            //male = human.Find("Male").transform.Find("FollowCam").gameObject;
+            //female = human.Find("Female").transform.Find("FollowCam").gameObject;
+
+            objectTofollow = human.GetChild(sex).transform.Find("FollowCam").gameObject.GetComponent<Transform>();
+            ScrollWheel = -0.5f;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            sex = 1 - sex;
+            objectTofollow = human.GetChild(sex).transform.Find("FollowCam").gameObject.GetComponent<Transform>();
+        }
         ScrollWheel += Input.GetAxis("Mouse ScrollWheel");
 
     }
