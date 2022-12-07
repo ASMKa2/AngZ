@@ -319,6 +319,7 @@ GameObject:
   - component: {fileID: 8953364964233347144}
   - component: {fileID: 6075889775744462875}
   - component: {fileID: 4106107021353191683}
+  - component: {fileID: 8182439132345599911}
   m_Layer: 0
   m_Name: Male
   m_TagString: Untagged
@@ -382,6 +383,10 @@ MonoBehaviour:
   TopGroup: {fileID: 882157087642838826}
   LegGroup: {fileID: 8708985827599971117}
   HairGroup: {fileID: 9168182142945085241}
+  currentHeadNumber: 0
+  currentTopNumber: 0
+  currentLegNumber: 0
+  currentHairNumber: 2
 --- !u!114 &1555731254056920742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -508,9 +513,26 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 8953364964233347144}
   - {fileID: 6075889775744462875}
+  - {fileID: 8182439132345599911}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &8182439132345599911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46648668106117830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &52391864506192073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1683,6 +1705,7 @@ GameObject:
   - component: {fileID: 5694518509737493786}
   - component: {fileID: 7371573962163121606}
   - component: {fileID: 473634867552111460}
+  - component: {fileID: 1121795938946501049}
   m_Layer: 0
   m_Name: Female
   m_TagString: Untagged
@@ -1746,6 +1769,10 @@ MonoBehaviour:
   TopGroup: {fileID: 1394191220316500182}
   LegGroup: {fileID: 5607002393216559012}
   HairGroup: {fileID: 8577859718889291842}
+  currentHeadNumber: 0
+  currentTopNumber: 0
+  currentLegNumber: 0
+  currentHairNumber: 0
 --- !u!114 &8343127323498676953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1785,6 +1812,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 7371573962163121606}
+  - {fileID: 1121795938946501049}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -1858,6 +1886,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PV: {fileID: 801857683099006782}
+--- !u!114 &1121795938946501049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473634867552111461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &485336255369448322
 GameObject:
   m_ObjectHideFlags: 0
@@ -5698,6 +5742,8 @@ GameObject:
   - component: {fileID: 7632209179226070764}
   - component: {fileID: 443495268430951398}
   - component: {fileID: 9209960815621059128}
+  - component: {fileID: 1993552189745141515}
+  - component: {fileID: 7298868344338542028}
   m_Layer: 0
   m_Name: human
   m_TagString: Untagged
@@ -5734,6 +5780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60b056249b2c5248b655a8a57715637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PV: {fileID: 443495268430951398}
   Sex: 0
 --- !u!114 &443495268430951398
 MonoBehaviour:
@@ -5753,7 +5800,8 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 7298868344338542028}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -5769,6 +5817,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 126494ae2a10a34499272ed97a6c9f5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1993552189745141515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854446090363972047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29124a91f721f0a4592906543a10f0ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  human: {fileID: 0}
+  male: {fileID: 0}
+  female: {fileID: 0}
+  MaleHair: {fileID: 0}
+  MaleHead: {fileID: 0}
+  MaleTop: {fileID: 0}
+  MaleBottom: {fileID: 0}
+  FemaleHair: {fileID: 0}
+  FemaleHead: {fileID: 0}
+  FemaleTop: {fileID: 0}
+  FemaleBottom: {fileID: 0}
+--- !u!114 &7298868344338542028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854446090363972047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &1857573949959172384
 GameObject:
   m_ObjectHideFlags: 0

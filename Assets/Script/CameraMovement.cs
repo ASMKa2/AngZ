@@ -28,7 +28,7 @@ public class CameraMovement : MonoBehaviour
     public float finalDistance;
     public float smoothness = 10f;
     int editmode;
-    int sex;
+    int sex = 0;
 
     public void mainCameraSet()
     {
@@ -36,7 +36,7 @@ public class CameraMovement : MonoBehaviour
         editmode = 0;
         //human = GameObject.Find("human(Clone)").GetComponent<Transform>();
 
-        objectTofollow = human.GetChild(sex).transform.Find("FollowCam").gameObject.GetComponent<Transform>();
+        //objectTofollow = human.GetChild(sex).transform.Find("FollowCam").gameObject.GetComponent<Transform>();
         ScrollWheel = -0.5f;
     }
 
@@ -58,8 +58,15 @@ public class CameraMovement : MonoBehaviour
         ScrollWheel = 0f;
         ScrollSpeed = 200f;
 
+        realCamera = Camera.main.GetComponent<Transform>();
+
         dirNormalized = realCamera.localPosition.normalized;
         finalDistance = realCamera.localPosition.magnitude;
+
+        //objectTofollow = human.GetChild(sex).transform.Find("FollowCam").gameObject.GetComponent<Transform>();
+        Debug.Log("human");
+        Debug.Log(human);
+        ScrollWheel = -0.5f;
         /*
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -69,7 +76,7 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         rotX += -(Input.GetAxis("Mouse Y")) * sensitivity * Time.deltaTime;
         rotY += Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
 

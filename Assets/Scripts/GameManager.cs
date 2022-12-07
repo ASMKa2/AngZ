@@ -30,9 +30,13 @@ public class GameManager : MonoBehaviourPunCallbacks
             VoiceObject.SetActive(false);
         }
 
+        Debug.Log("isCreator");
+        Debug.Log(isCreator);
         if (isCreator == 0)
         {
+            GameObject.Find("WorldEdit").SetActive(false);
             CreateHuman();
+            
             // 1. 물건 생성하는 panel off
             // 2. 카메라 이동작업
         }
@@ -40,7 +44,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         {
             GameObject.Find("Camera").GetComponent<CameraControl>().editCameraOn();
         }
-        PhotonNetwork.IsMessageQueueRunning = true;
+        //PhotonNetwork.IsMessageQueueRunning = true;
     }
 
     // Update is called once per frame

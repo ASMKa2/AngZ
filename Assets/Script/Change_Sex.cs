@@ -6,21 +6,36 @@ using Photon.Realtime;
 
 public class Change_Sex : MonoBehaviour
 {
-    public bool Sex = true;
+    private Transform transform;
+    public PhotonView PV;
+
+    public int Sex = 0;
     // Start is called before the first frame update
     void Start()
     {
+        transform = GetComponent<Transform>();
+
         transform.GetChild(0).gameObject.SetActive(true);
         transform.GetChild(1).gameObject.SetActive(false);
+
+        if (PV.IsMine)
+        {
+            Camera.main.GetComponent<CameraMovement>().objectTofollow = transform.GetChild(Sex).transform.Find("FollowCam").transform;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!PV.IsMine)
+        {
+            return;
+        }
+
         Vector3 pos;
         if(Input.GetKeyDown(KeyCode.Q)){
-            Sex = !Sex;
-            if(Sex){
+            Sex = Sex == 1 ? 0 : 1;
+            if(Sex == 1){
                 pos = transform.GetChild(1).transform.position;
                 transform.GetChild(0).gameObject.transform.position = pos;
                 transform.GetChild(1).gameObject.SetActive(false);
@@ -32,8 +47,8 @@ public class Change_Sex : MonoBehaviour
                 transform.GetChild(1).gameObject.SetActive(true);
                 transform.GetChild(0).gameObject.SetActive(false);
             }
-            GameObject.Find("Camera").GetComponent<CameraMovement>().ChangeSex();
+            Camera.main.GetComponent<CameraMovement>().objectTofollow = transform.GetChild(Sex).transform.Find("FollowCam").transform;
         }
-        
+
     }
 }

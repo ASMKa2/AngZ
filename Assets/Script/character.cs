@@ -18,10 +18,10 @@ public class character : MonoBehaviour
     List<GameObject> legs = new List<GameObject>();
     List<GameObject> hairs = new List<GameObject>();
 
-    int currentHeadNumber = 0;
-    int currentTopNumber = 0;
-    int currentLegNumber = 0;
-    int currentHairNumber = 0;
+    public int currentHeadNumber = 0;
+    public int currentTopNumber = 0;
+    public int currentLegNumber = 0;
+    public int currentHairNumber = 0;
 
 
     // Start is called before the first frame update
@@ -50,10 +50,12 @@ public class character : MonoBehaviour
         MakeDresses(HairGroup,hairs);
     }
     //선택한 number의 의상 나타내기
-    void ShowDresses(List<GameObject> group, int dressNumber){
+    public void ShowDresses(List<GameObject> group, int dressNumber){
         for (int i=0;i<group.Count;i++){
             group[i].SetActive(false);
         }
+        print("ZZZZZZZZZZ");
+        print(group.Count);
         group[dressNumber].SetActive(true);
     }
     // 선택한 의상 한번에 나타내기

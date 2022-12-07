@@ -248,7 +248,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         Debug.Log("Joined Room !!!");
         // photonNetwork의 데이터 통신을 잠깐 정지 시켜준다. 
         // gamemanager에서 avatar를 instantiate하고 나면 다시 연결시킨다
-        PhotonNetwork.IsMessageQueueRunning = false; 
+        //PhotonNetwork.IsMessageQueueRunning = false; 
         SceneManager.LoadScene(sceneName);
     }
 
