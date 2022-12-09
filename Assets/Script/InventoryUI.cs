@@ -21,7 +21,7 @@ public class InventoryUI : MonoBehaviour
                 inventoryPanel.SetActive(activeInventory);
             }
         }
-        if(Sex==true){
+        if(Sex==false){
             inventoryPanel = transform.GetChild(0).gameObject;
         }else{
             inventoryPanel = transform.GetChild(1).gameObject;

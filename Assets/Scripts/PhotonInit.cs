@@ -21,7 +21,8 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         PASSWORD = 5,
         PASSWORD_WRONG = 6,
         LOADING = 7,
-        QUIT = 8
+        QUIT = 8,
+        PASSWORD_EMPTY = 9
     }
     public ActivePanel activePanel = ActivePanel.LOGIN;
 
@@ -43,6 +44,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
 
     private void Awake()
     {
+        DontDestroyOnLoad(gameObject);
         // photon1과 photon2로 바뀌면서 달라진점 (같은방 동기화)
         PhotonNetwork.AutomaticallySyncScene = true;
     }
@@ -120,6 +122,16 @@ public class PhotonInit : MonoBehaviourPunCallbacks
 
     public void OnCreateRoomClick()
     {
+        if(password.text == "" && toggleLocked.isOn)
+        {
+            panels[(int)ActivePanel.PASSWORD_EMPTY].SetActive(true);
+            return;
+        }
+        else
+        {
+            panels[(int)ActivePanel.PASSWORD_EMPTY].SetActive(false);
+        }
+
         PlayerPrefs.SetString("ROOM_NAME", txtRoomName.text);
 
         ChangePanel(ActivePanel.CREATE_ROOM);
@@ -287,7 +299,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
     public Button[] CellBtn;
     public Button PreviousBtn;
     public Button NextBtn;
-    List<RoomInfo> myList = new List<RoomInfo>();
+    public List<RoomInfo> myList = new List<RoomInfo>();
     int currentPage = 1, maxPage, multiple;
     int curRoomNum;
     #region 방리스트 갱신
@@ -310,7 +322,6 @@ public class PhotonInit : MonoBehaviourPunCallbacks
             curRoomNum = multiple + num;
 
             bool isLocked = System.Convert.ToBoolean(ht["isLocked"]);
-
 
             if (isLocked)
             {

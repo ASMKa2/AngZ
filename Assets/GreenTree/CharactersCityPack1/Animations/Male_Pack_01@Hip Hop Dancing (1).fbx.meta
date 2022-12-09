@@ -19,11 +19,14 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1
     motionNodeName: 
-    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
-      human bone 'LeftHand' not found\n"
-    rigImportWarnings: 
+    rigImportErrors: 
+    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Inbetween bone
+      rotation in copied configuration does not match rotation in animation file:\n\t'Neck'
+      : rotation error = 3.639363 deg\n"
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'mixamo.com' has import animation warnings that
+      might lower retargeting quality:\n\t'Neck' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -213,223 +216,248 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Male_Pack_01_multi_materials(Clone)
+    - name: Male_Pack_01(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Head_01
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Head_02
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Head_04
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Legs_01
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Legs_02
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Legs_03
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Legs_04
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Torso_01
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Torso_02
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Torso_03
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Torso_10
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Legs_06
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Legs_07
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Legs_08
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Legs_09
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Torso_06
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Torso_07
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Torso_08
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Legs_10
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Torso_05
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Legs_05
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Root
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: 2.9092048e-16, y: 0.0000000019642323, z: -0.000000001926679}
-      rotation: {x: -0.7071068, y: 0.000000027798864, z: 0.000000027798912, w: 0.7071068}
+      rotation: {x: -0.7071068, y: 0.00000002779885, z: 0.000000027798917, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Hips
       parentName: Root
-      position: {x: 0.0000000042467674, y: -0.006634539, z: 0.7399973}
-      rotation: {x: 0.7071069, y: -0.00000009172065, z: -0.70710665, w: -0.000000091720686}
+      position: {x: 0.000000004246786, y: -0.006634539, z: 0.7399973}
+      rotation: {x: 0.7071069, y: -0.00000007064724, z: -0.70710665, w: -0.00000007064726}
       scale: {x: 1, y: 1, z: 1}
     - name: L_UpperLeg
       parentName: Hips
-      position: {x: 0.07077072, y: -0.0043972326, z: 0.123497665}
-      rotation: {x: -0.004526059, y: 0.9988251, z: 0.04420678, w: 0.01933218}
+      position: {x: 0.07077072, y: -0.00439723, z: 0.123497635}
+      rotation: {x: -0.0045256317, y: 0.9988251, z: 0.044206813, w: 0.019332102}
       scale: {x: 1, y: 1, z: 1}
     - name: L_LowerLeg
       parentName: L_UpperLeg
-      position: {x: -0.3071347, y: 0.0000005173683, z: -0.0000032043456}
-      rotation: {x: 0.002249772, y: -0.0020575773, z: 0.08321421, w: 0.996527}
+      position: {x: -0.30713478, y: 0.0000005102157, z: -0.0000032043456}
+      rotation: {x: 0.0022464648, y: -0.0020226468, z: 0.08332973, w: 0.9965175}
       scale: {x: 1, y: 1, z: 1}
     - name: L_Foot
       parentName: L_LowerLeg
-      position: {x: -0.2861316, y: -0.000000009536743, z: 0}
-      rotation: {x: -0.049172312, y: -0.010090612, z: -0.7075415, w: 0.70488673}
+      position: {x: -0.28613156, y: 0, z: 0}
+      rotation: {x: -0.049148355, y: -0.010109751, z: -0.7076261, w: 0.7048032}
       scale: {x: 1, y: 1, z: 1}
     - name: R_UpperLeg
       parentName: Hips
-      position: {x: 0.070770495, y: -0.0043966873, z: -0.12350009}
-      rotation: {x: -0.004511497, y: 0.99882907, z: -0.04422448, w: -0.019087747}
+      position: {x: 0.070770495, y: -0.0043967147, z: -0.123500094}
+      rotation: {x: -0.0045114574, y: 0.99882907, z: -0.044224545, w: -0.019087749}
       scale: {x: 1, y: 1, z: 1}
     - name: R_LowerLeg
       parentName: R_UpperLeg
-      position: {x: -0.3071351, y: 0.0000005221367, z: 0.0000032138823}
-      rotation: {x: -0.002276013, y: 0.0022353954, z: 0.08309919, w: 0.9965362}
+      position: {x: -0.3071351, y: 0.0000005197525, z: 0.0000031661987}
+      rotation: {x: -0.002275926, y: 0.0022351115, z: 0.083099164, w: 0.9965362}
       scale: {x: 1, y: 1, z: 1}
     - name: R_Foot
       parentName: R_LowerLeg
-      position: {x: -0.28612897, y: 0.0000000023841857, z: 0.000000009536743}
-      rotation: {x: 0.04962434, y: 0.010638238, z: -0.70747244, w: 0.7049163}
+      position: {x: -0.286129, y: -0.0000000023841857, z: -0.000000009536743}
+      rotation: {x: 0.049623996, y: 0.010638297, z: -0.70747244, w: 0.70491636}
       scale: {x: 1, y: 1, z: 1}
     - name: Spine
       parentName: Hips
-      position: {x: -0.0962606, y: -0.024594616, z: 0.0000000013730118}
-      rotation: {x: -0.000014050894, y: 0.00027748174, z: 0.028965153, w: 0.9995804}
+      position: {x: -0.0962606, y: -0.024594598, z: 0.000000009916276}
+      rotation: {x: -0.0000140151615, y: 0.0002775056, z: 0.028964918, w: 0.9995804}
       scale: {x: 1, y: 1, z: 1}
     - name: Chest
       parentName: Spine
-      position: {x: -0.2246756, y: 0.0000000023841857, z: -3.7252902e-11}
-      rotation: {x: 0.000013989644, y: -0.0002775396, z: -0.02896506, w: 0.9995804}
+      position: {x: -0.22467567, y: 0, z: 0}
+      rotation: {x: 0.000014076444, y: -0.00027744775, z: -0.028964996, w: 0.9995804}
       scale: {x: 1, y: 1, z: 1}
     - name: Neck
       parentName: Chest
-      position: {x: -0.122665174, y: -0.004082258, z: -0.00000044368207}
-      rotation: {x: -0.0000066737857, y: 0.000007894125, z: -0.16430143, w: 0.9864102}
+      position: {x: -0.122665174, y: -0.004082191, z: -0.00000040126963}
+      rotation: {x: -0.000006608979, y: 0.000007996441, z: -0.16430156, w: 0.9864102}
       scale: {x: 1, y: 1, z: 1}
     - name: Head
       parentName: Neck
-      position: {x: -0.094557114, y: -0.000000038146972, z: 0}
-      rotation: {x: 0.0000062822014, y: -0.000008218358, z: 0.20717159, w: 0.9783046}
+      position: {x: -0.094557114, y: 0, z: 0}
+      rotation: {x: 0.000006290914, y: -0.000008218174, z: 0.20717159, w: 0.9783046}
       scale: {x: 1, y: 1, z: 1}
     - name: L_UpperArm
       parentName: Chest
-      position: {x: -0.02849266, y: -0.02154296, z: 0.21421924}
-      rotation: {x: -0.007847022, y: 0.71914035, z: -0.0013142043, w: 0.6948193}
+      position: {x: -0.02849266, y: -0.021542873, z: 0.21421923}
+      rotation: {x: -0.0078457035, y: 0.7191393, z: -0.0013146581, w: 0.6948204}
       scale: {x: 1, y: 1, z: 1}
     - name: L_LowerArm
       parentName: L_UpperArm
-      position: {x: -0.21546549, y: 0.00000030517577, z: 0.0000007629394}
-      rotation: {x: 0.00093882496, y: 0.005303377, z: -0.0043968633, w: 0.99997586}
+      position: {x: -0.21546547, y: -0.0000003004074, z: -0.0000006866455}
+      rotation: {x: 0.00093888334, y: 0.0053024217, z: -0.0043963823, w: 0.99997586}
       scale: {x: 1, y: 1, z: 1}
     - name: L_Palm
       parentName: L_LowerArm
-      position: {x: -0.1971506, y: -0.00000008106232, z: -0.00000015258789}
-      rotation: {x: -0.71038246, y: -0.009987315, z: 0.0021790594, w: 0.70374167}
+      position: {x: -0.1971506, y: 0.00000009059906, z: 0.00000022888183}
+      rotation: {x: -0.71038246, y: -0.00998623, z: 0.00217954, w: 0.7037416}
       scale: {x: 1, y: 1, z: 1}
     - name: R_UpperArm
       parentName: Chest
-      position: {x: -0.02856224, y: -0.021569844, z: -0.21422191}
-      rotation: {x: 0.007897983, y: -0.7192503, z: -0.0013506107, w: 0.69470483}
+      position: {x: -0.028562088, y: -0.021569904, z: -0.21422192}
+      rotation: {x: 0.007882534, y: -0.7192497, z: -0.0013655188, w: 0.69470567}
       scale: {x: 1, y: 1, z: 1}
     - name: R_LowerArm
       parentName: R_UpperArm
-      position: {x: -0.21546547, y: 0.00000027179718, z: -0.0000003814697}
-      rotation: {x: -0.000939197, y: -0.005142252, z: -0.004335494, w: 0.99997693}
+      position: {x: -0.2154655, y: -0.00000027179718, z: 0.00000045776366}
+      rotation: {x: -0.00093922974, y: -0.0051417407, z: -0.0043350556, w: 0.99997693}
       scale: {x: 1, y: 1, z: 1}
     - name: R_Palm
       parentName: R_LowerArm
-      position: {x: -0.19715065, y: -0.00000007152557, z: 0.00000022888183}
-      rotation: {x: 0.7103824, y: 0.009986054, z: 0.0021803537, w: 0.7037417}
+      position: {x: -0.19715057, y: 0.000000085830685, z: -0.00000015258789}
+      rotation: {x: 0.71038246, y: 0.009985212, z: 0.0021806227, w: 0.7037416}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Head_03
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: -6.439791e-11}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Head_05
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: Male_Head_01_copy01
+      parentName: Male_Pack_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Male_Head_02_copy001
+      parentName: Male_Pack_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Male_Head_01_copy004
+      parentName: Male_Pack_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Male_Head_04_copy_01
+      parentName: Male_Pack_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Male_Head_04_copy_01 1
+      parentName: Male_Pack_01(Clone)
+      position: {x: -0, y: 0, z: -6.439791e-11}
+      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Male_Torso_04
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Male_Torso_09
-      parentName: Male_Pack_01_multi_materials(Clone)
+      parentName: Male_Pack_01(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -445,7 +473,7 @@ ModelImporter:
     hasTranslationDoF: 1
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e2f1050490852ec4e9ff069123a24e92, type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 04e0a3a42c17f6c4d8f9699e0fefa43b, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1

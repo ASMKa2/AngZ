@@ -86,7 +86,9 @@ public class SlotScript : MonoBehaviour
 
         }
 
-        makeList(MaleHair.transform, mhairs);
+        //makeList(MaleHair.transform, mhairs);
+        print(mhairs.Count);
+        
         makeList(MaleHead.transform, mheads);
         makeList(MaleTop.transform, mtops);
         makeList(MaleBottom.transform, mlegs);
@@ -99,10 +101,12 @@ public class SlotScript : MonoBehaviour
     }
     void makeList(Transform group, List<GameObject> dressList)
     {
+        int cnt = 0;
         foreach (Transform dress in group)
         {
             dressList.Add(dress.gameObject);
         }
+        print(dressList.Count);
     }
     public void ChangeHairSelect()
     {
@@ -113,21 +117,19 @@ public class SlotScript : MonoBehaviour
         strNum = Regex.Replace(strText, @"\D", "");
         print(strNum);
         int num = int.Parse(strNum) - 1;
+        mhairs.Clear();
+        makeList(MaleHair.transform, mhairs);
+        print(mhairs.Count);
+        
         if (transform.GetChild(0).gameObject.activeSelf == true)
         {
-            print("AAAAA");
-            transform.GetChild(0).GetComponent<character>().currentHairNumber = num;
-            print("KKKKKKKK");
-            print(mhairs.Count);
-            transform.GetChild(0).gameObject.GetComponent<character>().ShowDresses(mhairs, num);
-            print("BBBBB");
+            male.GetComponent<character>().currentHairNumber = num;
+            male.GetComponent<character>().ShowDresses(mhairs, num);
         }
         else
         {
-            print("CCCCCC");
             female.GetComponent<character>().currentHairNumber = num;
             female.GetComponent<character>().ShowDresses(fhairs, num);
-            print("DDDDD");
         }
     }
     public void ChangeHeadSelect()

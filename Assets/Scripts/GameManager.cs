@@ -12,15 +12,21 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     public GameObject VoiceObject;
 
+    public GameObject QuitPanel;
+    public GameObject ChatPanel;
+
+    public TMP_Text[] ChatText;
+    public TMP_InputField ChatInput;
+    public PhotonView PV;
+
+    public bool isChatPanelOn = false;
+    public bool isQuitPanelOn = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("GameManger Start");
-        //Insert functions for loading scene for avatar creation
-        //����� photoninit���� loadscene�ϰ� ���⼭ avatar ����.
-        //photoninit�� select tema ���� create room �ϱ� ���� avatar ���� ��� ������ �̵��ߴٰ� ����
-        //�°��� �����س��� �ƹ�Ÿ ���̵� �ڵ� �м�����
-        // MapEdit();
 
         isCreator = PlayerPrefs.GetInt("isCreator");
         Debug.Log("isCreator");
@@ -36,13 +42,10 @@ public class GameManager : MonoBehaviourPunCallbacks
         {
             GameObject.Find("WorldEdit").SetActive(false);
             CreateHuman();
-            
-            // 1. 물건 생성하는 panel off
-            // 2. 카메라 이동작업
         }
         else if (isCreator == 1)
         {
-            GameObject.Find("Camera").GetComponent<CameraControl>().editCameraOn();
+            GameObject.Find("CameraController").GetComponent<CameraControl>().editCameraOn();
         }
         //PhotonNetwork.IsMessageQueueRunning = true;
     }
@@ -50,17 +53,11 @@ public class GameManager : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        /*
-        if (isCreator == 1 && Input.GetKeyDown(KeyCode.M))
-        {
-            CreateHuman();
-        }
-        */
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            if (!isChatPanelActive)
+            if (!isChatPanelOn && !isQuitPanelOn)
             {
-                isChatPanelActive = true;
+                isChatPanelOn = true;
                 ChatPanel.SetActive(true);
             }
             else
@@ -75,23 +72,18 @@ public class GameManager : MonoBehaviourPunCallbacks
     }
 
     #region QUIT_GAME
-    public GameObject QuitPanel;
-
     public void QuitPanelOff()
     {
+        isQuitPanelOn = false;
         QuitPanel.SetActive(false);
     }
 
     public void QuitGame()
     {
+        isQuitPanelOn = true;
         Application.Quit();
     }
     #endregion
-
-    void MapEdit()
-    {
-
-    }
 
     public void CreateHuman()
     {
@@ -101,20 +93,12 @@ public class GameManager : MonoBehaviourPunCallbacks
     }
 
     #region CHAT
-    //update���� enter Ű �Է� �� ä�� â ����
-    public GameObject ChatPanel;
-
-    public TMP_Text[] ChatText;
-    public TMP_InputField ChatInput;
-    public PhotonView PV;
-
-    private bool isChatPanelActive = false;
 
     public void Send()
     {
         if (ChatInput.text.ToString() == "")
         {
-            isChatPanelActive = false;
+            isChatPanelOn = false;
             ChatPanel.SetActive(false); 
         }
         else

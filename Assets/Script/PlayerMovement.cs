@@ -57,6 +57,10 @@ public class PlayerMovement : MonoBehaviourPunCallbacks
     }
     void LateUpdate()
     {
+        if (!PV.IsMine)
+        {
+            return;
+        }
         if (togglerCameraRotation != true)
         {
             Vector3 playerRotate = Vector3.Scale(_camera.transform.forward, new Vector3(1, 0, 1));

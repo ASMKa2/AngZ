@@ -88,7 +88,7 @@ public class CameraMovement : MonoBehaviour
         {
             ChangeSex();
         }
-        ScrollWheel += Input.GetAxis("Mouse ScrollWheel");
+        //ScrollWheel += Input.GetAxis("Mouse ScrollWheel");
 
     }
 
@@ -110,8 +110,9 @@ public class CameraMovement : MonoBehaviour
             finalDistance = maxDistance;
         }
         Vector3 CameraDirection = realCamera.localRotation * Vector3.forward;
-        realCamera.localPosition += CameraDirection * Time.deltaTime * ScrollWheel * ScrollSpeed;
-        realCamera.localPosition = Vector3.Lerp(realCamera.localPosition, dirNormalized * finalDistance, Time.deltaTime * smoothness);
+
+        //realCamera.localPosition += CameraDirection * Time.deltaTime * ScrollWheel * ScrollSpeed;
+        //realCamera.localPosition = Vector3.Lerp(realCamera.localPosition, dirNormalized * finalDistance, Time.deltaTime * smoothness);
 
     }
 }

@@ -5,18 +5,21 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Text.RegularExpressions;
+using Photon.Pun;
 
-public class character : MonoBehaviour
+public class character : MonoBehaviourPunCallbacks
 {
     public Transform HeadGroup;
     public Transform TopGroup;
     public Transform LegGroup;
     public Transform HairGroup;
 
-    List<GameObject> heads = new List<GameObject>();
-    List<GameObject> tops = new List<GameObject>();
-    List<GameObject> legs = new List<GameObject>();
-    List<GameObject> hairs = new List<GameObject>();
+    public PhotonView PV;
+
+    public List<GameObject> heads = new List<GameObject>();
+    public List<GameObject> tops = new List<GameObject>();
+    public List<GameObject> legs = new List<GameObject>();
+    public List<GameObject> hairs = new List<GameObject>();
 
     public int currentHeadNumber = 0;
     public int currentTopNumber = 0;
@@ -54,8 +57,7 @@ public class character : MonoBehaviour
         for (int i=0;i<group.Count;i++){
             group[i].SetActive(false);
         }
-        print("ZZZZZZZZZZ");
-        print(group.Count);
+        
         group[dressNumber].SetActive(true);
     }
     // 선택한 의상 한번에 나타내기

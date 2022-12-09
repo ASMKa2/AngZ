@@ -14,7 +14,7 @@ public class CameraControl : MonoBehaviour
         
         mainCam.SetActive(true);
         editCam.SetActive(false);
-        GameObject.Find("Camera").GetComponent<CameraMovement>().mainCameraSet();
+        //GameObject.Find("Camera").GetComponent<CameraMovement>().mainCameraSet();
         //male.SetActive(true);
     }
 
@@ -31,6 +31,8 @@ public class CameraControl : MonoBehaviour
         //male = GameObject.Find("Male");
         Debug.Log("CameraControl Creator");
         Debug.Log(PlayerPrefs.GetInt("IsCreator"));
+        editCam.SetActive(true);
+        mainCam.SetActive(false);
         //if (PlayerPrefs.GetInt("IsCreator") == 1) editCameraOn();
         //else mainCameraOn();
     }

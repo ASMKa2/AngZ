@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/release' branch; Version is '2021.3.12f1 (8af3c3e441b1) revision 9106371'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'ko' Physical Memory: 15776 MB
+OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'ko' Physical Memory: 32394 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.12f1\Editor\Unity.exe
 -name
 AssetImportWorker4
 -projectPath
-C:/Users/user/capstone_design/AngZ
+C:/Users/kayso/Desktop/unity/1207/AngZ
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-9800
-Successfully changed project path to: C:/Users/user/capstone_design/AngZ
-C:/Users/user/capstone_design/AngZ
+63080
+Successfully changed project path to: C:/Users/kayso/Desktop/unity/1207/AngZ
+C:/Users/kayso/Desktop/unity/1207/AngZ
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,111 +47,115 @@ C:/Users/user/capstone_design/AngZ
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 140.06 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 150.33 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.12f1 (8af3c3e441b1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/user/capstone_design/AngZ/Assets
+[Subsystems] Discovering subsystems at path C:/Users/kayso/Desktop/unity/1207/AngZ/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
-    Vendor:   NVIDIA
-    VRAM:     6023 MB
-    Driver:   30.0.15.1278
+    Renderer: Intel(R) Arc(TM) A350M Graphics (ID=0x5694)
+    Vendor:   Intel
+    VRAM:     4018 MB
+    Driver:   30.0.101.1747
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56320
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006779 seconds.
+Registered in 0.015296 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 93.97 ms, found 6 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 71.92 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.571 seconds
+- Completed reload, in  0.637 seconds
 Domain Reload Profiling:
-	ReloadAssembly (571ms)
-		BeginReloadAssembly (69ms)
+	ReloadAssembly (638ms)
+		BeginReloadAssembly (89ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (408ms)
-			LoadAssemblies (66ms)
+		EndReloadAssembly (396ms)
+			LoadAssemblies (90ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (88ms)
+			SetupTypeCache (84ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (20ms)
-			SetupLoadedEditorAssemblies (251ms)
+			SetupLoadedEditorAssemblies (226ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (94ms)
+				RefreshPlugins (72ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (104ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
+				ProcessInitializeOnLoadAttributes (92ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.011296 seconds.
+Registered in 0.021294 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\user\capstone_design\AngZ\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\user\capstone_design\AngZ\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\kayso\Desktop\unity\1207\AngZ\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\kayso\Desktop\unity\1207\AngZ\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.36 ms, found 6 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.998 seconds
+- Completed reload, in  1.016 seconds
 Domain Reload Profiling:
-	ReloadAssembly (999ms)
-		BeginReloadAssembly (120ms)
+	ReloadAssembly (1017ms)
+		BeginReloadAssembly (114ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (765ms)
-			LoadAssemblies (92ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (754ms)
+			LoadAssemblies (116ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (246ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (346ms)
+			SetupTypeCache (248ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (333ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (213ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (198ms)
 				ProcessInitializeOnLoadMethodAttributes (28ms)
-				AfterProcessingInitializeOnLoad (10ms)
+				AfterProcessingInitializeOnLoad (14ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.01 ms, found 6 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.72 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3820 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 68 unused Assets / (115.9 KB). Loaded Objects now: 4265.
-Memory consumption went from 168.9 MB to 168.8 MB.
-Total: 3.357300 ms (FindLiveObjects: 0.307900 ms CreateObjectMapping: 0.198600 ms MarkObjects: 2.726300 ms  DeleteObjects: 0.123600 ms)
+Unloading 3817 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 68 unused Assets / (115.7 KB). Loaded Objects now: 4262.
+Memory consumption went from 168.7 MB to 168.6 MB.
+Total: 3.020400 ms (FindLiveObjects: 0.201600 ms CreateObjectMapping: 0.108500 ms MarkObjects: 2.588400 ms  DeleteObjects: 0.120700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -159,292 +163,124 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 65923.195518 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Male_multi_materials/Male_Mustache_02.fbx
-  artifactKey: Guid(51cf49acd6af3074eb8e58492e394e20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Male_multi_materials/Male_Mustache_02.fbx using Guid(51cf49acd6af3074eb8e58492e394e20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89c1069a40b30103454eec4dddffbd41') in 0.222784 seconds 
+  Time since last request: 1248850.691401 seconds.
+  path: Assets/image/male/leg/11.png
+  artifactKey: Guid(cf28d9fd300fbe242899c3f605e1264b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/11.png using Guid(cf28d9fd300fbe242899c3f605e1264b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d75fced512d2bc94b0dfba048ceda4e') in 0.104623 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Male_multi_materials/Male_Mustache_04.fbx
-  artifactKey: Guid(2c8adb7cc03bd3940b5c887f9c12f5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Male_multi_materials/Male_Mustache_04.fbx using Guid(2c8adb7cc03bd3940b5c887f9c12f5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a571cd6cdaa5462b61cf3562881de28') in 0.032782 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.430671 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/BackPlane.fbx
-  artifactKey: Guid(338b85e4aafa6c1428ea2ed78ab1af32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/BackPlane.fbx using Guid(338b85e4aafa6c1428ea2ed78ab1af32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6291c9d2480242191b54d4cd65b13a') in 0.028910 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.755312 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models
-  artifactKey: Guid(7cac822b58c14b9488a9824734d06b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models using Guid(7cac822b58c14b9488a9824734d06b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05384bab5179490b5fee3cb5c8dc3c71') in 0.008576 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.100631 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female
-  artifactKey: Guid(d5e7678eb9cd89f429cbcfd5ddcf0914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female using Guid(d5e7678eb9cd89f429cbcfd5ddcf0914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69291e62a9e2cb56c63ce165c718ed42') in 0.005959 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.057443 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Glasses_01.fbx
-  artifactKey: Guid(abcbc0295fa5631499d86d2a880ee497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Glasses_01.fbx using Guid(abcbc0295fa5631499d86d2a880ee497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eaf8320cb2e7a4346fa2654ff7039a4') in 0.035856 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_03_v4.fbx
-  artifactKey: Guid(9f1ba2c58be341f4caff70ad0d7d347d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_03_v4.fbx using Guid(9f1ba2c58be341f4caff70ad0d7d347d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4749156faa56050f5690170f74438d31') in 0.042129 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_09_v4.fbx
-  artifactKey: Guid(57d8e0e201a5b4c47bbcc2122ae107ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_09_v4.fbx using Guid(57d8e0e201a5b4c47bbcc2122ae107ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e43b013556cdde9bdf4cb9d7b5eb08') in 0.030817 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hat_02_v2.fbx
-  artifactKey: Guid(f550fbaff88f2f0429d2ca473ac09600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hat_02_v2.fbx using Guid(f550fbaff88f2f0429d2ca473ac09600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc08c03af46f15bc821dbb3afee0fe14') in 0.034270 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_02_v2.fbx
-  artifactKey: Guid(c28a5a7de7fd1e24fb1cd610c914ee35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_02_v2.fbx using Guid(c28a5a7de7fd1e24fb1cd610c914ee35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd68f35f22b865a965a55e6240d60c96') in 0.033037 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_08_v3.fbx
-  artifactKey: Guid(b2443d0bab7461d46b7ba0f615abfcc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_08_v3.fbx using Guid(b2443d0bab7461d46b7ba0f615abfcc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '069d94ae23e7ba9ac82a52d2fb1a0603') in 0.025387 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_07.fbx
-  artifactKey: Guid(fd0cd3229da04de4ca7204e97d2055a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_07.fbx using Guid(fd0cd3229da04de4ca7204e97d2055a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24d0b4e4d42a55fee9f38f9f97eb98cc') in 0.027660 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_10_v2.fbx
-  artifactKey: Guid(04551d40cd30b6e4abf78733740cd455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_10_v2.fbx using Guid(04551d40cd30b6e4abf78733740cd455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e2c7e1baffe18e75c5cbb25286928d6') in 0.037421 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_10_v4.fbx
-  artifactKey: Guid(60d115fd19883be4f87e74488f0097a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_10_v4.fbx using Guid(60d115fd19883be4f87e74488f0097a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6873bfceef9f8e3187c845c8243d5d51') in 0.024044 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hat_01_v2.fbx
-  artifactKey: Guid(4a29ab0cd6af5fe45b32adcdf930950d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hat_01_v2.fbx using Guid(4a29ab0cd6af5fe45b32adcdf930950d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2df90894164ca1ee1a4ed002df5bb205') in 0.027787 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_01_v4.fbx
-  artifactKey: Guid(7c69004180e7b6c409b7061eeb00bb8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_01_v4.fbx using Guid(7c69004180e7b6c409b7061eeb00bb8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54b010bc7d1f1d1831052f10a17f34a0') in 0.035381 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_05_v2.fbx
-  artifactKey: Guid(409c70991ad6df04b8598d7b6ad2921f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_05_v2.fbx using Guid(409c70991ad6df04b8598d7b6ad2921f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e886dcb30142b05344c8e29a80e668e1') in 0.020934 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_05.fbx
-  artifactKey: Guid(d066c88eca2f2084ca66ddd09486904d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_05.fbx using Guid(d066c88eca2f2084ca66ddd09486904d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56382c758f319c75f26e55015b55c57c') in 0.022321 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_06.fbx
-  artifactKey: Guid(d6ebe3ee6d4e5b443bf6b6c7d8bc070d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_06.fbx using Guid(d6ebe3ee6d4e5b443bf6b6c7d8bc070d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9d5119ff4aab84ff1f51b3c7c31fe4b') in 0.025746 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hat_01.fbx
-  artifactKey: Guid(30cad4689c6cc8d498cb07934123af52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hat_01.fbx using Guid(30cad4689c6cc8d498cb07934123af52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6419454c0895b24864e33f6fbfc9a5bb') in 0.021187 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_05_v4.fbx
-  artifactKey: Guid(67b999849fcbe6641a704d0f58ce17c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_05_v4.fbx using Guid(67b999849fcbe6641a704d0f58ce17c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a700dcf09e792d7315b31c56cd91902a') in 0.022916 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_03_v3.fbx
-  artifactKey: Guid(7cfef7b8c3ddce04fa77469d6c3ac98e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_03_v3.fbx using Guid(7cfef7b8c3ddce04fa77469d6c3ac98e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c414d980e0c8a85f6a611c473bdafdb8') in 0.025909 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_07_v4.fbx
-  artifactKey: Guid(f14db705d091b314c9ab41a020efd965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_07_v4.fbx using Guid(f14db705d091b314c9ab41a020efd965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a206076e70a98b906332013161e9fab') in 0.022482 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_06_v4.fbx
-  artifactKey: Guid(f75c289ff298b7f44a688b87b9928054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_06_v4.fbx using Guid(f75c289ff298b7f44a688b87b9928054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0950682e575483049ef8a45565a67fe') in 0.021851 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_06_v2.fbx
-  artifactKey: Guid(6f3b3c58fff45a84cb81983f424b0685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_06_v2.fbx using Guid(6f3b3c58fff45a84cb81983f424b0685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a29f459bb70a16e964a7e596506e3d7e') in 0.022496 seconds 
+  Time since last request: 0.000018 seconds.
+  path: Assets/image/male/leg/20.png
+  artifactKey: Guid(e37f6813454865d4897d761c76e7508d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/20.png using Guid(e37f6813454865d4897d761c76e7508d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc6d5d201834a318ef36b0d95324a099') in 0.016887 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000035 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Glasses_02_v2.fbx
-  artifactKey: Guid(8dab8141ace1f6a4daa5662e5676fb30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Glasses_02_v2.fbx using Guid(8dab8141ace1f6a4daa5662e5676fb30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4599e86faac49278152075be4d2cb63e') in 0.027735 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hat_01_v3.fbx
-  artifactKey: Guid(29d037c99ad29ef4e9821f668e4dfc0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hat_01_v3.fbx using Guid(29d037c99ad29ef4e9821f668e4dfc0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '888dae69e9f3fb74cb460129c4917d47') in 0.021840 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_08_v2.fbx
-  artifactKey: Guid(cda93b7fa1630e54697310e347fa9f60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_08_v2.fbx using Guid(cda93b7fa1630e54697310e347fa9f60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebb64e5c5652123ad5219deefb07af29') in 0.024433 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_03_v2.fbx
-  artifactKey: Guid(cbcc6340729dbe645b0ffab6815287b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_03_v2.fbx using Guid(cbcc6340729dbe645b0ffab6815287b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd160797166fe05713093d0fa7dc10ce2') in 0.028140 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hat_02_v4.fbx
-  artifactKey: Guid(0fc36379c59e5424490173bf38eb6373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hat_02_v4.fbx using Guid(0fc36379c59e5424490173bf38eb6373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e1bf362ea6ac50d115b50ad7a3077c9') in 0.023963 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_07_v2.fbx
-  artifactKey: Guid(1947e4dfab9e5d1488bd56ac5c7e41a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_07_v2.fbx using Guid(1947e4dfab9e5d1488bd56ac5c7e41a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2677778c70e4cc61a8630d8e02eb7b57') in 0.022293 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_10.fbx
-  artifactKey: Guid(4a086cbd03493cc4385daed596fee994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_10.fbx using Guid(4a086cbd03493cc4385daed596fee994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f51789af8149c49657cc6c19a1687b37') in 0.022798 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hat_02_v3.fbx
-  artifactKey: Guid(75e4f1e1fa78f594ca13a0f123661bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hat_02_v3.fbx using Guid(75e4f1e1fa78f594ca13a0f123661bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afcc5eabc6487435acb6c1d8c80b3db5') in 0.021970 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000069 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Glasses_02.fbx
-  artifactKey: Guid(e60c9d3b8b507b341a4c1356fd81bcf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Glasses_02.fbx using Guid(e60c9d3b8b507b341a4c1356fd81bcf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18a79899725987e9478555fd62f4f942') in 0.031791 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_10_v3.fbx
-  artifactKey: Guid(d8336d1bf830e2743ae942ff72213452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_10_v3.fbx using Guid(d8336d1bf830e2743ae942ff72213452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '458a34eb3ca46da0e59cd604a2035316') in 0.023579 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hat_01_v4.fbx
-  artifactKey: Guid(ee9d9defda06d5e4d8ab2ea8c5a04644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hat_01_v4.fbx using Guid(ee9d9defda06d5e4d8ab2ea8c5a04644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ecd21c49270e1c7ee0ca86ff1cb9a05') in 0.022929 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_02.fbx
-  artifactKey: Guid(6bec139d23e67bc419331ebe88d585b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_02.fbx using Guid(6bec139d23e67bc419331ebe88d585b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed693e44c7924e8646090389132bcf19') in 0.021622 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_01_v2.fbx
-  artifactKey: Guid(2a78f353a17c0ba43aca11b2a1e33e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_01_v2.fbx using Guid(2a78f353a17c0ba43aca11b2a1e33e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af2dc8d4bf0b9a5738c63ccaab13418b') in 0.020386 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_04.fbx
-  artifactKey: Guid(96d88caa32f72534db711007033d06c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_04.fbx using Guid(96d88caa32f72534db711007033d06c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bed94b004e7093718df6deffc81ccbd') in 0.023199 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_09_v2.fbx
-  artifactKey: Guid(45c7f00b190c3224180a936f67f9ca85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_09_v2.fbx using Guid(45c7f00b190c3224180a936f67f9ca85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14c4269318d2df5ba3e144ae692b64d1') in 0.025955 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_08_v4.fbx
-  artifactKey: Guid(d3bda080aa86f2148884aefc1f984314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_08_v4.fbx using Guid(d3bda080aa86f2148884aefc1f984314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e876342435effdc8d6adb759ce4886c') in 0.022372 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_07_v3.fbx
-  artifactKey: Guid(7daca5499e2e1e04f8bec44d50025e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_07_v3.fbx using Guid(7daca5499e2e1e04f8bec44d50025e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b444d6427966328451e2abdc8b75d604') in 0.021036 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hat_02.fbx
-  artifactKey: Guid(acb1ef71b517a7b4a9a554dc8002d4d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hat_02.fbx using Guid(acb1ef71b517a7b4a9a554dc8002d4d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f3fbe4eac71a31a7b0fb1021fce1bcf') in 0.021949 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_09_v3.fbx
-  artifactKey: Guid(0b5b402162968b04ebe9128f5faca73a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_09_v3.fbx using Guid(0b5b402162968b04ebe9128f5faca73a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edc87532d01b0a9f579d38b61f6291c4') in 0.021753 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_08.fbx
-  artifactKey: Guid(edef074b1f7f17d4f98ada634653d0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_08.fbx using Guid(edef074b1f7f17d4f98ada634653d0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee0b6099f958547416d1b401e03d0262') in 0.026820 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000096 seconds.
-  path: Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_04_v4.fbx
-  artifactKey: Guid(62a85c15bbd45ed418c962324afffed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GreenTree/CharactersCityPack1/Models/Female/Female_Hairs_04_v4.fbx using Guid(62a85c15bbd45ed418c962324afffed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2805d11a8ac4037a936400ee976d68c7') in 0.025920 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 58.898294 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/HumanoidWalk.fbx
-  artifactKey: Guid(b1a5e04ae51004842aba06704a6c2903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/HumanoidWalk.fbx using Guid(b1a5e04ae51004842aba06704a6c2903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43062f1772009af0e2d2e783596b4131') in 0.027922 seconds 
+  path: Assets/image/male/leg/39.png
+  artifactKey: Guid(ee1cb04ea481b074f83778cd46a09b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/39.png using Guid(ee1cb04ea481b074f83778cd46a09b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daf5ae10b29426e1854c7c91736bd710') in 0.015317 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000027 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Models/Materials/SpaceshipHull.mat
-  artifactKey: Guid(de6b3d1666741b24597a4349a143eeb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Models/Materials/SpaceshipHull.mat using Guid(de6b3d1666741b24597a4349a143eeb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ccb60d9798a5974f5cd343e62821343') in 0.077213 seconds 
+  path: Assets/image/male/leg/18.png
+  artifactKey: Guid(0c158fb4c6d33f740997ef2c6c9333f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/18.png using Guid(0c158fb4c6d33f740997ef2c6c9333f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '919bf289290c6a519f3bcdf8f767f18a') in 0.021538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/image/male/leg/28.png
+  artifactKey: Guid(3e90f5d1ee805ef439781afd0d0857bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/28.png using Guid(3e90f5d1ee805ef439781afd0d0857bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c71ef57875b0f6f88eec64e0efd5fd') in 0.015374 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/image/male/leg/31.png
+  artifactKey: Guid(00a124de2f6a3414ead5b630e33ef92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/31.png using Guid(00a124de2f6a3414ead5b630e33ef92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41696589167296532354ee67a7f4effa') in 0.013691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/image/male/leg/17.png
+  artifactKey: Guid(044572fbd76c7c549b2a9d36b8ddcf24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/17.png using Guid(044572fbd76c7c549b2a9d36b8ddcf24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40e6b0921b57ff52340c6149df195746') in 0.020946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/image/male/leg/37.png
+  artifactKey: Guid(0145986908909ac48a909a784c8072f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/37.png using Guid(0145986908909ac48a909a784c8072f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25c9f399d14527ca1bfd5632332d519d') in 0.019305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/image/male/leg/21.png
+  artifactKey: Guid(81169caeb803e114ea8fb2ec537214b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/21.png using Guid(81169caeb803e114ea8fb2ec537214b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff55d2acad9a23e7dec11c4197baf595') in 0.016537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/image/male/leg/34.png
+  artifactKey: Guid(13734923183e0684a83c83bee910e8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/34.png using Guid(13734923183e0684a83c83bee910e8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50177a214507556b7589318a647ac60a') in 0.015224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/image/male/leg/15.png
+  artifactKey: Guid(1148fd4e89d6fa048b5744ce709c3868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/15.png using Guid(1148fd4e89d6fa048b5744ce709c3868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ea010124594b348a43c7f2e48258df4') in 0.016918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/image/male/leg/26.png
+  artifactKey: Guid(03b99602ec1e5d94d85cdfa387a75c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/26.png using Guid(03b99602ec1e5d94d85cdfa387a75c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7371fcb65670b50969abf773dac16c5') in 0.019260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/image/male/leg/24.png
+  artifactKey: Guid(89c426274bb2b064c9b1ae2e9cb9436f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/24.png using Guid(89c426274bb2b064c9b1ae2e9cb9436f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89e5b5c87c1483bcfa6cc61870407763') in 0.017263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/image/male/leg/33.png
+  artifactKey: Guid(f34fe829aa9d675489740e5c0b8017ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/33.png using Guid(f34fe829aa9d675489740e5c0b8017ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95fa9ad0b57297fa369050acc37fd5a7') in 0.013714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/image/male/leg/14.png
+  artifactKey: Guid(5a6f6eea33f1aba4ab00e16d6be84e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/14.png using Guid(5a6f6eea33f1aba4ab00e16d6be84e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '348e4be09f9d385c0f83815ef21f6ce5') in 0.020778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.295179 seconds.
+  path: Assets/image/male/leg/1.png
+  artifactKey: Guid(254a7d04f773cf944bcbc85334f29bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/1.png using Guid(254a7d04f773cf944bcbc85334f29bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d5d4031de3d6ab139f50493a4c8145a') in 0.015923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/image/male/leg/5.png
+  artifactKey: Guid(dad0e826fc220d741a7979357cc4ef1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/5.png using Guid(dad0e826fc220d741a7979357cc4ef1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '259fcf09131b3f2a38c88b1d9eebdf2d') in 0.024805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/image/male/leg/6.png
+  artifactKey: Guid(61a00a4ee25dd074f896399a6f60650a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/6.png using Guid(61a00a4ee25dd074f896399a6f60650a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '922e7eb4a77877854649ad2e2bbfe37f') in 0.020851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/image/male/leg/4.png
+  artifactKey: Guid(f5a587fce97bb624cbbdab80f3d735b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/4.png using Guid(f5a587fce97bb624cbbdab80f3d735b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b54801f35cf535e56fbf6bccd406cc4e') in 0.016876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/image/male/leg/8.png
+  artifactKey: Guid(87476425363cbdd45a0808d4fda035df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/image/male/leg/8.png using Guid(87476425363cbdd45a0808d4fda035df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '712b40fc3f4ddc48a18b75e9a579cd6d') in 0.016153 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

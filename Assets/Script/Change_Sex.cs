@@ -20,6 +20,7 @@ public class Change_Sex : MonoBehaviour
 
         if (PV.IsMine)
         {
+            Debug.Log(Camera.main.name);
             Camera.main.GetComponent<CameraMovement>().objectTofollow = transform.GetChild(Sex).transform.Find("FollowCam").transform;
         }
     }
@@ -34,7 +35,6 @@ public class Change_Sex : MonoBehaviour
 
         Vector3 pos;
         if(Input.GetKeyDown(KeyCode.Q)){
-            Sex = Sex == 1 ? 0 : 1;
             if(Sex == 1){
                 pos = transform.GetChild(1).transform.position;
                 transform.GetChild(0).gameObject.transform.position = pos;
@@ -47,6 +47,7 @@ public class Change_Sex : MonoBehaviour
                 transform.GetChild(1).gameObject.SetActive(true);
                 transform.GetChild(0).gameObject.SetActive(false);
             }
+            Sex = Sex == 1 ? 0 : 1;
             Camera.main.GetComponent<CameraMovement>().objectTofollow = transform.GetChild(Sex).transform.Find("FollowCam").transform;
         }
 

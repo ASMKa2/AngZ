@@ -22,9 +22,21 @@ public class SpecialAnim : MonoBehaviourPunCallbacks
             return;
         }
 
-        if (Input.anyKey) anim.SetBool("dance1", false);
-        else anim.SetBool("dance1", true);
-        if (Input.GetKeyDown(KeyCode.F1)) anim.SetTrigger("dance");
-        else if (Input.GetKeyDown(KeyCode.Space)) anim.SetTrigger("jump");
+//if (Input.anyKey) anim.SetBool("dance1", false);
+        //else anim.SetBool("dance1", true);
+        if (Input.GetKeyDown(KeyCode.Space)) anim.SetTrigger("jump");
+        else if (Input.GetKeyDown(KeyCode.F1)) anim.SetTrigger("dance");
+        else if (Input.GetKeyDown(KeyCode.F2)) anim.SetTrigger("gangnam");
+        else if (Input.GetKeyDown(KeyCode.F3)) anim.SetTrigger("standing_clap");
+        else if (Input.GetKeyDown(KeyCode.F4)) anim.SetTrigger("crawl");
+        else if (Input.GetKeyDown(KeyCode.F5)) anim.SetTrigger("hurricane");
+        else if (Input.GetKeyDown(KeyCode.F6)) anim.SetTrigger("fireball");
+        else if (Input.GetKeyDown(KeyCode.F7)) anim.SetTrigger("plank");
+        else if (Input.GetKeyDown(KeyCode.F8)) anim.SetTrigger("kick");
+        else if (Input.GetKeyDown(KeyCode.F9)) anim.SetTrigger("kick");
+        else if (Input.GetKeyDown(KeyCode.F10)) anim.SetTrigger("kick");
+        else if (Input.GetKeyDown(KeyCode.F11)) anim.SetTrigger("kick");
+        else if (Input.GetKeyDown(KeyCode.F12)) anim.SetTrigger("kick");
+
     }
 }

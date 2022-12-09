@@ -381,7 +381,7 @@
 "Assets/Script/character.cs"
 "Assets/Script/EqChange.cs"
 "Assets/Script/InventoryUI.cs"
-"Assets/Script/Male_character.cs"
+"Assets/Script/NatureGenerate.cs"
 "Assets/Script/PlayerMovement.cs"
 "Assets/Script/SlotScript.cs"
 "Assets/Script/SnowmanGenerate.cs"
