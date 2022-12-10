@@ -145,6 +145,17 @@ public class GameManager : MonoBehaviourPunCallbacks
             for (int i = 1; i < ChatText.Length; i++) ChatText[i - 1].text = ChatText[i].text;
             ChatText[ChatText.Length - 1].text = msg;
         }
+        ChatPanel.SetActive(true);
+
+        Invoke("wait5sec", 5f);
+    }
+
+    void wait5sec()
+    {
+        ChatPanel.SetActive(false);
+        isChatPanelOn = false;
     }
     #endregion
+
+
 }

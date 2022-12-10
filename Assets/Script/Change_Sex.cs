@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using TMPro;
 
-public class Change_Sex : MonoBehaviour
+public class Change_Sex : MonoBehaviourPunCallbacks
 {
     private Transform transform;
     public PhotonView PV;

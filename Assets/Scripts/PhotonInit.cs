@@ -285,6 +285,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         if (passwordTried.text.Equals(System.Convert.ToString(ht["password"])))
         {
             panels[(int)ActivePanel.PASSWORD_WRONG].SetActive(false);
+            PlayerPrefs.SetInt("isCreator", 0);
             PhotonNetwork.JoinRoom(myList[curRoomNum].Name);
         }
         else
@@ -331,6 +332,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
             }
             else
             {
+                PlayerPrefs.SetInt("isCreator", 0);
                 PhotonNetwork.JoinRoom(myList[multiple + num].Name);
                 MyListRenewal();
             }
@@ -353,13 +355,15 @@ public class PhotonInit : MonoBehaviourPunCallbacks
         for (int i = 0; i < CellBtn.Length; i++)
         {
             CellBtn[i].interactable = (multiple + i < myList.Count) ? true : false;
+            string type = "";
             if (multiple + i < myList.Count)
             {
                 Hashtable ht = myList[multiple + i].CustomProperties;
                 bool isLocked = System.Convert.ToBoolean(ht["isLocked"]);
                 bool isVoice = System.Convert.ToBoolean(ht["isVoice"]);
+                type = (string)(ht["sceneName"]);
 
-                if (isLocked)
+                if (isVoice)
                 {
                     CellBtn[i].transform.GetChild(2).GetComponent<RawImage>().enabled = true;
                 }
@@ -367,7 +371,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
                 {
                     CellBtn[i].transform.GetChild(2).GetComponent<RawImage>().enabled = false;
                 }
-                if (isVoice)
+                if (isLocked)
                 {
                     CellBtn[i].transform.GetChild(3).GetComponent<RawImage>().enabled = true;
                 }
@@ -382,7 +386,7 @@ public class PhotonInit : MonoBehaviourPunCallbacks
                 CellBtn[i].transform.GetChild(3).GetComponent<RawImage>().enabled = false;
             }
             CellBtn[i].transform.GetChild(0).GetComponent<TMP_Text>().text = (multiple + i < myList.Count) ? myList[multiple + i].Name : "";
-            CellBtn[i].transform.GetChild(1).GetComponent<TMP_Text>().text = (multiple + i < myList.Count) ? myList[multiple + i].PlayerCount + "/" + myList[multiple + i].MaxPlayers : "";
+            CellBtn[i].transform.GetChild(1).GetComponent<TMP_Text>().text = (multiple + i < myList.Count) ? type + " " + myList[multiple + i].PlayerCount + "/" + myList[multiple + i].MaxPlayers : "";
         }
     }
 
