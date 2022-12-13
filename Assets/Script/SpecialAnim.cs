@@ -35,7 +35,7 @@ public class SpecialAnim : MonoBehaviourPunCallbacks
         else if (Input.GetKeyDown(KeyCode.F5)) anim.SetTrigger("hurricane");
         else if (Input.GetKeyDown(KeyCode.F6)) anim.SetTrigger("fireball");
         else if (Input.GetKeyDown(KeyCode.F7)) anim.SetTrigger("plank");
-        else if (Input.GetKeyDown(KeyCode.Return))
+        else if (Input.GetKeyDown(KeyCode.RightAlt))
         {
             if (is_sit == 0) anim.SetTrigger("stand_to_sit");
             else anim.SetTrigger("sit_to_stand");
