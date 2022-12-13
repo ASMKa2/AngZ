@@ -8,10 +8,13 @@ public class SpecialAnim : MonoBehaviourPunCallbacks
 {
     public PhotonView PV;
     Animator anim;
+
+    int is_sit;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        is_sit = 0;
     }
     
     // Update is called once per frame
@@ -22,7 +25,7 @@ public class SpecialAnim : MonoBehaviourPunCallbacks
             return;
         }
 
-//if (Input.anyKey) anim.SetBool("dance1", false);
+        //if (Input.anyKey) anim.SetBool("dance1", false);
         //else anim.SetBool("dance1", true);
         if (Input.GetKeyDown(KeyCode.Space)) anim.SetTrigger("jump");
         else if (Input.GetKeyDown(KeyCode.F1)) anim.SetTrigger("dance");
@@ -32,11 +35,11 @@ public class SpecialAnim : MonoBehaviourPunCallbacks
         else if (Input.GetKeyDown(KeyCode.F5)) anim.SetTrigger("hurricane");
         else if (Input.GetKeyDown(KeyCode.F6)) anim.SetTrigger("fireball");
         else if (Input.GetKeyDown(KeyCode.F7)) anim.SetTrigger("plank");
-        else if (Input.GetKeyDown(KeyCode.F8)) anim.SetTrigger("kick");
-        else if (Input.GetKeyDown(KeyCode.F9)) anim.SetTrigger("kick");
-        else if (Input.GetKeyDown(KeyCode.F10)) anim.SetTrigger("kick");
-        else if (Input.GetKeyDown(KeyCode.F11)) anim.SetTrigger("kick");
-        else if (Input.GetKeyDown(KeyCode.F12)) anim.SetTrigger("kick");
-
+        else if (Input.GetKeyDown(KeyCode.Return))
+        {
+            if (is_sit == 0) anim.SetTrigger("stand_to_sit");
+            else anim.SetTrigger("sit_to_stand");
+            is_sit = 1 - is_sit;
+        }
     }
 }
